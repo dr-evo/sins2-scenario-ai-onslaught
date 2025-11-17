@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "name": "scenario.ai-onslaught.name",
+  "uppercase_name": "scenario.ai-onslaught.name",
+  "description": "scenario.ai-onslaught.name",
+  "desired_player_slots_configuration": {
+    "player_count": 6,
+    "team_count": 2,
+    "team_assignments": [0, 0, 0, 0, 0, 0, 1, 1, 1]
+  },
+  "are_player_slots_randomized": false,
+  "can_gravity_wells_move": false,
+  "has_npcs": true,
+  "planet_counts": [23, 23],
+  "star_counts": [1, 1],
+  "resources": "scenario_options_view_resources_medium",
+  "map_type": "scenario_options_view_map_type_custom"
+}

@@ -6,6 +6,7 @@ AI gets planets with refineries and factories (unique_scenario)
 
 AI gets more income (mod - ai uniform)
 
+Override AI player fleet supply cap via scenario.lua ?
 
 
 super pirates

@@ -1,11 +1,151 @@
 {
-	"start_window_movie": "scenario_superpowers",
-    "start_window_movie_brush": "map_art_superpowers",
-    "start_window_description": "scenario.ai-onslaught.start_window_description",
-    "objective_description": "scenario.ai-onslaught.objective_description",
-	"disable_research":[
-        "advent_unlock_hyperspace_between_stars",
-        "trader_unlock_hyperspace_between_stars",
-        "vasari_unlock_hyperspace_between_stars"
+  "start_window_movie": "scenario_superpowers",
+  "start_window_movie_brush": "map_art_superpowers",
+  "start_window_description": "scenario.ai-onslaught.start_window_description",
+  "objective_description": "scenario.ai-onslaught.objective_description",
+  "victory_type_gui": {
+    "won_pictures": ["superpowers_victory_picture"],
+    "lost_pictures": ["superpowers_defeat_picture"],
+    "won_texts": [
+      {
+        "status": "player_victory.status.unique_scenario.superpowers.won",
+        "phrase": "player_victory.phrase.unique_scenario.superpowers.won"
+      }
+    ],
+    "lost_texts": [
+      {
+        "status": "player_victory.status.unique_scenario.superpowers.lost",
+        "phrase": "player_victory.phrase.unique_scenario.superpowers.lost"
+      }
     ]
+  },
+  "victory_overrides": [
+    "home_planet"
+  ],
+  "disable_research": [
+    "advent_unlock_hyperspace_between_stars",
+    "trader_unlock_hyperspace_between_stars",
+    "vasari_unlock_hyperspace_between_stars"
+  ],
+  "allowed_factions": [
+    {"player_index": 6, "allowed_factions": ["vasari_loyalist"]},
+    {"player_index": 7, "allowed_factions": ["trader_rebel"]},
+    {"player_index": 8, "allowed_factions": ["advent_loyalist"]}
+  ],
+  "required_players": [
+    {"player_index": 6, "human": false, "ai": true},
+    {"player_index": 7, "human": false, "ai": true},
+    {"player_index": 8, "human": false, "ai": true}
+  ],
+  "ai_params": [
+    {
+      "player_index": 6, "min_difficulty": "impossible", "ai_behavior": "aggressive",
+      "chance_to_ally_with_other_players": [0.0, 0.0]
+    },
+    {
+      "player_index": 7, "min_difficulty": "impossible", "ai_behavior": "aggressive",
+      "chance_to_ally_with_other_players": [0.0, 0.0]
+    },
+    {
+      "player_index": 8, "min_difficulty": "impossible", "ai_behavior": "aggressive",
+      "chance_to_ally_with_other_players": [0.0, 0.0]
+    }
+  ],
+  "player_home_planet": [
+    {
+      "player_index": 6,
+      "faction_allowed": "vasari_loyalist",
+      "starting_track_levels": {
+        "logistics": 5, "defense": 5, "commerce": 5, "mining": 5, "research": 5
+      },
+      "starting_is_colonized": true,
+      "starting_militia_supply": 0
+    },
+    {
+      "player_index": 7,
+      "faction_allowed": "trader_rebel",
+      "starting_track_levels": {
+        "logistics": 5, "defense": 5, "commerce": 5, "mining": 5, "research": 5
+      },
+      "starting_is_colonized": true,
+      "starting_militia_supply": 0
+    },
+    {
+      "player_index": 8,
+      "faction_allowed": "advent_loyalist",
+      "starting_track_levels": {
+        "logistics": 5, "defense": 5, "commerce": 5, "mining": 5, "research": 5
+      },
+      "starting_is_colonized": true,
+      "starting_militia_supply": 0
+    }
+  ],
+  "starting_research": [
+    {
+      "faction_allowed": "vasari_loyalist",
+      "player_definitions": [
+        {
+          "player_index": 6,
+          "domains_definitions": [
+            {"domain": "civilian", "unlocked_tier": 2, "unlock_all_research_through_tier": 2},
+            {"domain": "military", "unlocked_tier": 2, "unlock_all_research_through_tier": 2}
+          ],
+          "other_unlocked_research": []
+        }
+      ]
+    },
+    {
+      "faction_allowed": "trader_rebel",
+      "player_definitions": [
+        {
+          "player_index": 7,
+          "domains_definitions": [
+            {"domain": "civilian", "unlocked_tier": 2, "unlock_all_research_through_tier": 2},
+            {"domain": "military", "unlocked_tier": 2, "unlock_all_research_through_tier": 2}
+          ],
+          "other_unlocked_research": []
+        }
+      ]
+    },
+    {
+      "faction_allowed": "advent_loyalist",
+      "player_definitions": [
+        {
+          "player_index": 8,
+          "domains_definitions": [
+            {"domain": "civilian", "unlocked_tier": 2, "unlock_all_research_through_tier": 2},
+            {"domain": "military", "unlocked_tier": 2, "unlock_all_research_through_tier": 2}
+          ],
+          "other_unlocked_research": []
+        }
+      ]
+    }
+  ],
+  "starting_units_to_any_player_and_gravity_well": [],
+  "initial_timer_before_waves": 30,
+  "waves": {
+    "wave_interval": 210,
+    "force_unlock_enemy_research_tier_interval": 5,
+    "unit_waves": [
+      {
+        "minimum_wave_count": 0,
+        "maximum_wave_count": 50,
+        "wave_spawn_units": [
+          {
+            "player_index": 6,
+            "gravity_well_id": 12,
+            "minor_target_vector_ordered": [10, 8, 7],
+            "spawn_units": {
+              "required_units": [
+                {"unit": "vasari_scout_corvette", "wave_strength_log_scalar": 1.0, "count": [1, 1]},
+                {"unit": "vasari_light_frigate", "wave_strength_log_scalar": 1.0, "count": [6, 9]},
+                {"unit": "vasari_anticorvette_corvette", "wave_strength_log_scalar": 1.0, "count": [9, 12]},
+                {"unit": "vasari_marauder_capital_ship", "wave_strength_log_scalar": 1.0, "count": [1, 1]}
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
 }

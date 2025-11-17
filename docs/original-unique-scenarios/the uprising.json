@@ -1,0 +1,168 @@
+{
+    "start_window_description": "scenario.the_uprising.start_window_description",
+    "start_window_movie_brush": "map_art_the_uprising",
+    "objective_description": "scenario.the_uprising.objective_description",
+    "start_window_movie": "scenario_the_uprising",
+    "allowed_factions":
+    [
+        {
+            "player_index": 0,
+            "allowed_factions":
+            [
+                "trader_loyalist"
+            ]
+        },
+        {
+            "player_index": 1,
+            "allowed_factions":
+            [
+                "trader_rebel"
+            ]
+        },
+        {
+            "player_index": 2,
+            "allowed_factions":
+            [
+                "trader_rebel"
+            ]
+        },
+        {
+            "player_index": 3,
+            "allowed_factions":
+            [
+                "trader_rebel"
+            ]
+        },
+        {
+            "player_index": 4,
+            "allowed_factions":
+            [
+                "trader_rebel"
+            ]
+        },
+        {
+            "player_index": 5,
+            "allowed_factions":
+            [
+                "trader_rebel"
+            ]
+        },
+        {
+            "player_index": 6,
+            "allowed_factions":
+            [
+                "trader_rebel"
+            ]
+        }
+    ],
+    "required_players":
+    [
+        {
+            "player_index": 0,
+            "human": true,
+            "ai": false
+        },
+        {
+            "player_index": 1,
+            "human": false,
+            "ai": true
+        },
+        {
+            "player_index": 2,
+            "human": false,
+            "ai": true
+        },
+        {
+            "player_index": 3,
+            "human": false,
+            "ai": true
+        },
+        {
+            "player_index": 4,
+            "human": false,
+            "ai": true
+        },
+        {
+            "player_index": 5,
+            "human": false,
+            "ai": true
+        },
+        {
+            "player_index": 6,
+            "human": false,
+            "ai": true
+        }
+    ],
+    
+    "ai_params":
+    [
+        {
+            "player_index": 1,
+            "min_difficulty": "easy",
+            "default_difficulty": "medium"
+        },
+        {
+            "player_index": 2,
+            "min_difficulty": "easy",
+            "default_difficulty": "medium"
+        },
+        {
+            "player_index": 3,
+            "min_difficulty": "easy",
+            "default_difficulty": "medium"
+        },
+        {
+            "player_index": 4,
+            "min_difficulty": "easy",
+            "default_difficulty": "medium"
+        },
+        {
+            "player_index": 5,
+            "min_difficulty": "easy",
+            "default_difficulty": "medium"
+        },
+        {
+            "player_index": 6,
+            "min_difficulty": "easy",
+            "default_difficulty": "medium"
+        }
+    ],
+    "player_victory_overrides" :
+    [
+        {
+            "player_index":0,
+            "player_faction":"trader_loyalist",
+            "victory_overrides":
+            [
+                "colonization"
+            ]
+        },
+        {
+            "player_index": 1,
+            "player_faction":"trader_rebel",
+            "victory_overrides":
+            [
+                "military"
+            ]
+        }
+    ],
+    "victory_type_gui":
+    {
+        "won_pictures": [
+            "the_uprising_victory_picture"
+        ],
+        "lost_pictures": [
+            "the_uprising_defeat_picture"
+        ],
+        "won_texts": [
+        {
+            "status": "player_victory.status.unique_scenario.the_uprising.won",
+            "phrase": "player_victory.phrase.unique_scenario.the_uprising.won"
+        }],
+        "lost_texts": [
+        {
+            "status": "player_victory.status.unique_scenario.the_uprising.lost",
+            "phrase": "player_victory.phrase.unique_scenario.the_uprising.lost"
+        }]
+    }
+}
