@@ -12,3 +12,12 @@ Override AI player fleet supply cap via scenario.lua ?
 super pirates
 
 super aluxians
+
+
+
+hero units helping an allied AI
+
+carrier with corvette strike craft
+
+hero units selected for free from factory
+start with titan

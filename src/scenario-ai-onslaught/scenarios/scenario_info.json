@@ -4,7 +4,7 @@
   "uppercase_name": "scenario.ai-onslaught.name",
   "description": "scenario.ai-onslaught.name",
   "desired_player_slots_configuration": {
-    "player_count": 6,
+    "player_count": 9,
     "team_count": 2,
     "team_assignments": [0, 0, 0, 0, 0, 0, 1, 1, 1]
   },

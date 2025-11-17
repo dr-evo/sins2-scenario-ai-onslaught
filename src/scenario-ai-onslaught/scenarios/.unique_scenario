@@ -23,9 +23,7 @@
     "home_planet"
   ],
   "disable_research": [
-    "advent_unlock_hyperspace_between_stars",
-    "trader_unlock_hyperspace_between_stars",
-    "vasari_unlock_hyperspace_between_stars"
+    "trader_rebel_pirate_cease_fire"
   ],
   "allowed_factions": [
     {"player_index": 6, "allowed_factions": ["vasari_loyalist"]},
@@ -132,15 +130,14 @@
         "maximum_wave_count": 50,
         "wave_spawn_units": [
           {
-            "player_index": 6,
-            "gravity_well_id": 12,
-            "minor_target_vector_ordered": [10, 8, 7],
+            "player_index": 10,
+            "gravity_well_id": 11,
+            "minor_target_vector_ordered": [25, 2],
             "spawn_units": {
               "required_units": [
-                {"unit": "vasari_scout_corvette", "wave_strength_log_scalar": 1.0, "count": [1, 1]},
-                {"unit": "vasari_light_frigate", "wave_strength_log_scalar": 1.0, "count": [6, 9]},
-                {"unit": "vasari_anticorvette_corvette", "wave_strength_log_scalar": 1.0, "count": [9, 12]},
-                {"unit": "vasari_marauder_capital_ship", "wave_strength_log_scalar": 1.0, "count": [1, 1]}
+                {"unit": "pirate_light_frigate", "wave_strength_log_scalar": 1.0, "count": [20, 20]},
+                {"unit": "pirate_heavy_cruiser", "wave_strength_log_scalar": 1.0, "count": [10, 10]},
+                {"unit": "pirate_siege_frigate", "wave_strength_log_scalar": 1.0, "count": [5, 5]}
               ]
             }
           }
