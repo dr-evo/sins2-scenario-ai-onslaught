@@ -1,0 +1,8 @@
+{
+    "scenarios": [
+		"ai-onslaught"
+    ],
+    "fake_server_scenarios": [],
+    "dlc_scenarios": [],
+    "dlc_multiplayer_scenarios": []
+}

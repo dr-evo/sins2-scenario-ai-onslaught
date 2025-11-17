@@ -1,0 +1,1896 @@
+{
+    "remove_free_units": true,
+    "start_window_movie": "scenario_superpowers",
+    "start_window_movie_brush": "map_art_superpowers",
+    "start_window_description": "scenario.superpowers.start_window_description",
+    "objective_description": "scenario.superpowers.objective_description",
+    "victory_overrides":
+    [
+        "military",
+        "home_planet"
+    ],
+    "required_players":
+    [
+        {
+            "player_index":0,
+            "human":true,
+            "ai":false
+        },
+        {
+            "player_index":1,
+            "human":false,
+            "ai":true
+        }
+    ],
+    "ai_params":
+    [
+        {
+            "player_index": 1,
+            "min_difficulty": "medium",
+            "default_difficulty": "hard",
+            "ai_behavior": "aggressive"
+        }
+    ],
+    "player_home_planet":
+    [
+        {
+            "faction_allowed": "advent_loyalist",
+            "starting_track_levels":
+            {
+                "logistics": 5,
+                "defense": 5,
+                "commerce": 5,
+                "mining": 5,
+                "research": 5
+            },
+            "starting_is_colonized": true,
+            "starting_militia_supply": 0
+        },
+        {
+            "faction_allowed": "advent_rebel",
+            "starting_track_levels":
+            {
+                "logistics": 5,
+                "defense": 5,
+                "commerce": 5,
+                "mining": 5,
+                "research": 5
+            },
+            "starting_is_colonized": true,
+            "starting_militia_supply": 0
+        },
+        {
+            "faction_allowed": "trader_loyalist",
+            "starting_track_levels":
+            {
+                "logistics": 5,
+                "defense": 5,
+                "commerce": 5,
+                "mining": 5,
+                "research": 5
+            },
+            "starting_is_colonized": true,
+            "starting_militia_supply": 0
+        },
+        {
+            "faction_allowed": "trader_rebel",
+            "starting_track_levels":
+            {
+                "logistics": 5,
+                "defense": 5,
+                "commerce": 5,
+                "mining": 5,
+                "research": 5
+            },
+            "starting_is_colonized": true,
+            "starting_militia_supply": 0
+        },
+        {
+            "faction_allowed": "vasari_loyalist",
+            "random_fixture_filling": "random_ferrous_planet",
+            "starting_track_levels":
+            {
+                "logistics": 5,
+                "defense": 5,
+                "commerce": 5,
+                "mining": 5,
+                "research": 5
+            },
+            "starting_is_colonized": true,
+            "starting_militia_supply": 0
+        },
+        {
+            "faction_allowed": "vasari_rebel",
+            "random_fixture_filling": "random_ferrous_planet",
+            "starting_track_levels":
+            {
+                "logistics": 5,
+                "defense": 5,
+                "commerce": 5,
+                "mining": 5,
+                "research": 5
+            },
+            "starting_is_colonized": true,
+            "starting_militia_supply": 0
+        }
+    ],
+    "starting_units_to_any_player_and_gravity_well":
+    [
+        {
+            "faction_allowed": "advent_loyalist",
+            "faction_spawn_units": [
+            {
+                "player_index": 0,
+                "gravity_well_id": 2,
+                "spawn_units": {
+                    "required_units": [
+                    {
+                        "unit": "advent_beam_defense_structure",
+                        "count": [3, 3]
+                    },
+                    {
+                        "unit": "advent_capital_ship_factory_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "advent_civilian_research_lab_structure",
+                        "count": [15, 15]
+                    },
+                    {
+                        "unit": "advent_culture_center_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "advent_deliverance_engine_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "advent_exotic_factory_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "advent_hangar_defense_structure",
+                        "count": [5, 5]
+                    },
+                    {
+                        "unit": "advent_laser_defense_structure",
+                        "count": [4, 4]
+                    },
+                    {
+                        "unit": "advent_loyalist_titan_factory_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "advent_military_research_lab_structure",
+                        "count": [15, 15]
+                    },
+                    {
+                        "unit": "advent_phase_jump_inhibitor_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "advent_ship_factory_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "advent_temple_of_renewal_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "advent_unity_structure",
+                        "count": [1, 1]
+                    }]
+                },
+                "spawn_units_in_formation": [{
+                    "required_units": [
+                    {
+                        "unit": "advent_loyalist_titan",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "advent_battle_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "advent_battle_psionic_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "advent_carrier_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "advent_colony_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "advent_planet_psionic_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "advent_heavy_cruiser",
+                        "count": [8, 8]
+                    },
+                    {
+                        "unit": "advent_carrier_cruiser",
+                        "count": [4, 4]
+                    },
+                    {
+                        "unit": "advent_defense_cruiser",
+                        "count": [15, 15]
+                    },
+                    {
+                        "unit": "advent_guardian_cruiser",
+                        "count": [2, 2]
+                    },
+                    {
+                        "unit": "advent_gunship_corvette",
+                        "count": [20, 20]
+                    },
+                    {
+                        "unit": "advent_long_range_cruiser",
+                        "count": [5, 5]
+                    },
+                    {
+                        "unit": "advent_light_frigate",
+                        "count": [20, 20]
+                    },
+                    {
+                        "unit": "advent_missile_frigate",
+                        "count": [5, 5]
+                    },
+                    {
+                        "unit": "advent_subjugator_cruiser",
+                        "count": [2, 2]
+                    },
+                    {
+                        "unit": "advent_scout_corvette",
+                        "count": [2, 2]
+                    }]
+                }]
+            },{
+                "player_index": 1,
+                "gravity_well_id": 3,
+                "spawn_units": {
+                    "required_units": [
+                    {
+                        "unit": "advent_beam_defense_structure",
+                        "count": [3, 3]
+                    },
+                    {
+                        "unit": "advent_capital_ship_factory_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "advent_civilian_research_lab_structure",
+                        "count": [15, 15]
+                    },
+                    {
+                        "unit": "advent_culture_center_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "advent_deliverance_engine_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "advent_exotic_factory_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "advent_hangar_defense_structure",
+                        "count": [5, 5]
+                    },
+                    {
+                        "unit": "advent_laser_defense_structure",
+                        "count": [4, 4]
+                    },
+                    {
+                        "unit": "advent_loyalist_titan_factory_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "advent_military_research_lab_structure",
+                        "count": [15, 15]
+                    },
+                    {
+                        "unit": "advent_phase_jump_inhibitor_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "advent_ship_factory_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "advent_temple_of_renewal_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "advent_unity_structure",
+                        "count": [1, 1]
+                    }]
+                },
+                "spawn_units_in_formation": [
+                {
+                    "required_units": [
+                    {
+                        "unit": "advent_loyalist_titan",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "advent_battle_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "advent_battle_psionic_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "advent_carrier_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "advent_colony_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "advent_planet_psionic_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "advent_heavy_cruiser",
+                        "count": [8, 8]
+                    },
+                    {
+                        "unit": "advent_carrier_cruiser",
+                        "count": [4, 4]
+                    },
+                    {
+                        "unit": "advent_defense_cruiser",
+                        "count": [15, 15]
+                    },
+                    {
+                        "unit": "advent_guardian_cruiser",
+                        "count": [2, 2]
+                    },
+                    {
+                        "unit": "advent_gunship_corvette",
+                        "count": [20, 20]
+                    },
+                    {
+                        "unit": "advent_long_range_cruiser",
+                        "count": [5, 5]
+                    },
+                    {
+                        "unit": "advent_light_frigate",
+                        "count": [20, 20]
+                    },
+                    {
+                        "unit": "advent_missile_frigate",
+                        "count": [5, 5]
+                    },
+                    {
+                        "unit": "advent_subjugator_cruiser",
+                        "count": [2, 2]
+                    },
+                    {
+                        "unit": "advent_scout_corvette",
+                        "count": [2, 2]
+                    }]
+                }]
+            }]
+        },
+        {
+            "faction_allowed": "advent_rebel",
+            "faction_spawn_units": [
+            {
+                "player_index": 0,
+                "gravity_well_id": 2,
+                "spawn_units": {
+                    "required_units": [
+                    {
+                        "unit": "advent_beam_defense_structure",
+                        "count": [3, 3]
+                    },
+                    {
+                        "unit": "advent_capital_ship_factory_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "advent_civilian_research_lab_structure",
+                        "count": [15, 15]
+                    },
+                    {
+                        "unit": "advent_culture_center_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "advent_deliverance_engine_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "advent_exotic_factory_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "advent_hangar_defense_structure",
+                        "count": [5, 5]
+                    },
+                    {
+                        "unit": "advent_laser_defense_structure",
+                        "count": [4, 4]
+                    },
+                    {
+                        "unit": "advent_rebel_titan_factory_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "advent_military_research_lab_structure",
+                        "count": [15, 15]
+                    },
+                    {
+                        "unit": "advent_phase_jump_inhibitor_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "advent_ship_factory_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "advent_temple_of_renewal_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "advent_unity_structure",
+                        "count": [1, 1]
+                    }]
+                },
+                "spawn_units_in_formation": [
+                {
+                    "required_units": [
+                    {
+                        "unit": "advent_rebel_titan",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "advent_battle_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "advent_battle_psionic_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "advent_carrier_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "advent_colony_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "advent_planet_psionic_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "advent_heavy_cruiser",
+                        "count": [8, 8]
+                    },
+                    {
+                        "unit": "advent_carrier_cruiser",
+                        "count": [4, 4]
+                    },
+                    {
+                        "unit": "advent_defense_cruiser",
+                        "count": [15, 15]
+                    },
+                    {
+                        "unit": "advent_guardian_cruiser",
+                        "count": [2, 2]
+                    },
+                    {
+                        "unit": "advent_gunship_corvette",
+                        "count": [20, 20]
+                    },
+                    {
+                        "unit": "advent_long_range_cruiser",
+                        "count": [5, 5]
+                    },
+                    {
+                        "unit": "advent_light_frigate",
+                        "count": [20, 20]
+                    },
+                    {
+                        "unit": "advent_missile_frigate",
+                        "count": [5, 5]
+                    },
+                    {
+                        "unit": "advent_subjugator_cruiser",
+                        "count": [2, 2]
+                    },
+                    {
+                        "unit": "advent_scout_corvette",
+                        "count": [2, 2]
+                    }]
+                }]
+            },
+            {
+                "player_index": 1,
+                "gravity_well_id": 3,
+                "spawn_units": {
+                    "required_units": [
+                    {
+                        "unit": "advent_beam_defense_structure",
+                        "count": [3, 3]
+                    },
+                    {
+                        "unit": "advent_capital_ship_factory_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "advent_civilian_research_lab_structure",
+                        "count": [15, 15]
+                    },
+                    {
+                        "unit": "advent_culture_center_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "advent_deliverance_engine_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "advent_exotic_factory_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "advent_hangar_defense_structure",
+                        "count": [5, 5]
+                    },
+                    {
+                        "unit": "advent_laser_defense_structure",
+                        "count": [4, 4]
+                    },
+                    {
+                        "unit": "advent_rebel_titan_factory_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "advent_military_research_lab_structure",
+                        "count": [15, 15]
+                    },
+                    {
+                        "unit": "advent_phase_jump_inhibitor_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "advent_ship_factory_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "advent_temple_of_renewal_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "advent_unity_structure",
+                        "count": [1, 1]
+                    }]
+                },
+                "spawn_units_in_formation": [
+                {
+                    "required_units": [
+                    {
+                        "unit": "advent_rebel_titan",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "advent_battle_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "advent_battle_psionic_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "advent_carrier_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "advent_colony_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "advent_planet_psionic_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "advent_heavy_cruiser",
+                        "count": [8, 8]
+                    },
+                    {
+                        "unit": "advent_carrier_cruiser",
+                        "count": [4, 4]
+                    },
+                    {
+                        "unit": "advent_defense_cruiser",
+                        "count": [15, 15]
+                    },
+                    {
+                        "unit": "advent_guardian_cruiser",
+                        "count": [2, 2]
+                    },
+                    {
+                        "unit": "advent_gunship_corvette",
+                        "count": [20, 20]
+                    },
+                    {
+                        "unit": "advent_long_range_cruiser",
+                        "count": [5, 5]
+                    },
+                    {
+                        "unit": "advent_light_frigate",
+                        "count": [20, 20]
+                    },
+                    {
+                        "unit": "advent_missile_frigate",
+                        "count": [5, 5]
+                    },
+                    {
+                        "unit": "advent_subjugator_cruiser",
+                        "count": [2, 2]
+                    },
+                    {
+                        "unit": "advent_scout_corvette",
+                        "count": [2, 2]
+                    }]
+                }]
+            }]
+        },
+        {
+            "faction_allowed": "trader_loyalist",
+            "faction_spawn_units": [
+            {
+                "player_index": 0,
+                "gravity_well_id": 2,
+                "spawn_units": {
+                    "required_units": [
+                    {
+                        "unit": "trader_autocannon_defense_structure",
+                        "count": [4, 4]
+                    },
+                    {
+                        "unit": "trader_capital_ship_factory_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_civilian_research_lab_structure",
+                        "count": [15, 15]
+                    },
+                    {
+                        "unit": "trader_culture_center_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_exotic_factory_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_frigate_factory_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_gauss_defense_structure",
+                        "count": [10, 10]
+                    },
+                    {
+                        "unit": "trader_hangar_defense_structure",
+                        "count": [5, 5]
+                    },
+                    {
+                        "unit": "trader_military_research_lab_structure",
+                        "count": [15, 15]
+                    },
+                    {
+                        "unit": "trader_phase_jump_inhibitor_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_retrofit_bay_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_loyalist_titan_factory_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_trade_port_structure",
+                        "count": [1, 1]
+                    }]
+                },
+                "spawn_units_in_formation": [{
+                    "required_units": [
+                    {
+                        "unit": "trader_loyalist_titan",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_battle_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_carrier_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_colony_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_siege_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_support_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_heavy_cruiser",
+                        "count": [10, 10]
+                    },
+                    {
+                        "unit": "trader_antiarmor_frigate",
+                        "count": [10, 10]
+                    },
+                    {
+                        "unit": "trader_antifighter_frigate",
+                        "count": [15, 15]
+                    },
+                    {
+                        "unit": "trader_carrier_cruiser",
+                        "count": [6, 6]
+                    },
+                    {
+                        "unit": "trader_light_frigate",
+                        "count": [20, 20]
+                    },
+                    {
+                        "unit": "trader_skirmisher_corvette_frigate",
+                        "count": [30, 30]
+                    },
+                    {
+                        "unit": "trader_torpedo_cruiser",
+                        "count": [2, 2]
+                    },
+                    {
+                        "unit": "trader_scout_corvette",
+                        "count": [2, 2]
+                    }]
+                }]
+            },
+            {
+                "player_index": 1,
+                "gravity_well_id": 3,
+                "spawn_units": {
+                    "required_units": [
+                    {
+                        "unit": "trader_autocannon_defense_structure",
+                        "count": [4, 4]
+                    },
+                    {
+                        "unit": "trader_capital_ship_factory_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_civilian_research_lab_structure",
+                        "count": [15, 15]
+                    },
+                    {
+                        "unit": "trader_culture_center_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_exotic_factory_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_frigate_factory_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_gauss_defense_structure",
+                        "count": [10, 10]
+                    },
+                    {
+                        "unit": "trader_hangar_defense_structure",
+                        "count": [5, 5]
+                    },
+                    {
+                        "unit": "trader_military_research_lab_structure",
+                        "count": [15, 15]
+                    },
+                    {
+                        "unit": "trader_phase_jump_inhibitor_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_retrofit_bay_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_loyalist_titan_factory_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_trade_port_structure",
+                        "count": [1, 1]
+                    }]
+                },
+                "spawn_units_in_formation": [{
+                    "required_units": [
+                    {
+                        "unit": "trader_loyalist_titan",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_battle_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_carrier_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_colony_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_siege_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_support_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_heavy_cruiser",
+                        "count": [10, 10]
+                    },
+                    {
+                        "unit": "trader_antiarmor_frigate",
+                        "count": [10, 10]
+                    },
+                    {
+                        "unit": "trader_antifighter_frigate",
+                        "count": [15, 15]
+                    },
+                    {
+                        "unit": "trader_carrier_cruiser",
+                        "count": [6, 6]
+                    },
+                    {
+                        "unit": "trader_light_frigate",
+                        "count": [20, 20]
+                    },
+                    {
+                        "unit": "trader_skirmisher_corvette_frigate",
+                        "count": [30, 30]
+                    },
+                    {
+                        "unit": "trader_torpedo_cruiser",
+                        "count": [2, 2]
+                    },
+                    {
+                        "unit": "trader_scout_corvette",
+                        "count": [2, 2]
+                    }]
+                }]
+            }]
+        },
+        {
+            "faction_allowed": "trader_rebel",
+            "faction_spawn_units": [
+            {
+                "player_index": 0,
+                "gravity_well_id": 2,
+                "spawn_units": {
+                    "required_units": [
+                    {
+                        "unit": "trader_autocannon_defense_structure",
+                        "count": [4, 4]
+                    },
+                    {
+                        "unit": "trader_capital_ship_factory_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_civilian_research_lab_structure",
+                        "count": [15, 15]
+                    },
+                    {
+                        "unit": "trader_culture_center_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_exotic_factory_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_frigate_factory_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_gauss_defense_structure",
+                        "count": [10, 10]
+                    },
+                    {
+                        "unit": "trader_hangar_defense_structure",
+                        "count": [5, 5]
+                    },
+                    {
+                        "unit": "trader_military_research_lab_structure",
+                        "count": [15, 15]
+                    },
+                    {
+                        "unit": "trader_orbital_cannon_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_phase_jump_inhibitor_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_retrofit_bay_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_rebel_titan_factory_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_trade_port_structure",
+                        "count": [1, 1]
+                    }]
+                },
+                "spawn_units_in_formation": [{
+                    "required_units": [
+                    {
+                        "unit": "trader_rebel_titan",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_battle_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_carrier_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_colony_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_siege_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_support_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_heavy_cruiser",
+                        "count": [10, 10]
+                    },
+                    {
+                        "unit": "trader_antiarmor_frigate",
+                        "count": [10, 10]
+                    },
+                    {
+                        "unit": "trader_antifighter_frigate",
+                        "count": [15, 15]
+                    },
+                    {
+                        "unit": "trader_carrier_cruiser",
+                        "count": [6, 6]
+                    },
+                    {
+                        "unit": "trader_light_frigate",
+                        "count": [20, 20]
+                    },
+                    {
+                        "unit": "trader_skirmisher_corvette_frigate",
+                        "count": [30, 30]
+                    },
+                    {
+                        "unit": "trader_torpedo_cruiser",
+                        "count": [2, 2]
+                    },
+                    {
+                        "unit": "trader_scout_corvette",
+                        "count": [2, 2]
+                    }]
+                }]
+            },
+            {
+                "player_index": 1,
+                "gravity_well_id": 3,
+                "spawn_units": {
+                    "required_units": [
+                    {
+                        "unit": "trader_autocannon_defense_structure",
+                        "count": [4, 4]
+                    },
+                    {
+                        "unit": "trader_capital_ship_factory_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_civilian_research_lab_structure",
+                        "count": [15, 15]
+                    },
+                    {
+                        "unit": "trader_culture_center_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_exotic_factory_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_frigate_factory_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_gauss_defense_structure",
+                        "count": [10, 10]
+                    },
+                    {
+                        "unit": "trader_hangar_defense_structure",
+                        "count": [5, 5]
+                    },
+                    {
+                        "unit": "trader_military_research_lab_structure",
+                        "count": [15, 15]
+                    },
+                    {
+                        "unit": "trader_orbital_cannon_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_phase_jump_inhibitor_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_retrofit_bay_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_rebel_titan_factory_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_trade_port_structure",
+                        "count": [1, 1]
+                    }]
+                },
+                "spawn_units_in_formation": [{
+                    "required_units": [
+                    {
+                        "unit": "trader_rebel_titan",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_battle_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_carrier_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_colony_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_siege_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_support_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_heavy_cruiser",
+                        "count": [10, 10]
+                    },
+                    {
+                        "unit": "trader_antiarmor_frigate",
+                        "count": [10, 10]
+                    },
+                    {
+                        "unit": "trader_antifighter_frigate",
+                        "count": [15, 15]
+                    },
+                    {
+                        "unit": "trader_carrier_cruiser",
+                        "count": [6, 6]
+                    },
+                    {
+                        "unit": "trader_light_frigate",
+                        "count": [20, 20]
+                    },
+                    {
+                        "unit": "trader_skirmisher_corvette_frigate",
+                        "count": [30, 30]
+                    },
+                    {
+                        "unit": "trader_torpedo_cruiser",
+                        "count": [2, 2]
+                    },
+                    {
+                        "unit": "trader_scout_corvette",
+                        "count": [2, 2]
+                    }]
+                }]
+            }]
+        },
+        {
+            "faction_allowed": "vasari_loyalist",
+            "faction_spawn_units": [
+            {
+                "player_index": 0,
+                "gravity_well_id": 2,
+                "spawn_units": {
+                    "required_units": [
+                    {
+                        "unit": "vasari_civilian_research_lab_structure",
+                        "count": [15, 15]
+                    },
+                    {
+                        "unit": "vasari_culture_center_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "vasari_exotic_factory_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "vasari_factory_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "vasari_fleet_beacon_structure",
+                        "count": [4, 4]
+                    },
+                    {
+                        "unit": "vasari_military_research_lab_structure",
+                        "count": [15, 15]
+                    },
+                    {
+                        "unit": "vasari_missile_defense_structure",
+                        "count": [10, 10]
+                    },
+                    {
+                        "unit": "vasari_phase_gate_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "vasari_phase_jump_inhibitor_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "vasari_phase_synchronizer_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "vasari_pulse_defense_structure",
+                        "count": [6, 6]
+                    },
+                    {
+                        "unit": "vasari_repair_platform_structure",
+                        "count": [1, 1]
+                    }]
+                },
+                "spawn_units_in_formation": [{
+                    "required_units": [
+                    {
+                        "unit": "vasari_loyalist_titan",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "vasari_battle_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "vasari_carrier_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "vasari_colony_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "vasari_marauder_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "vasari_siege_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "vasari_antiarmor_cruiser",
+                        "count": [5, 5]
+                    },
+                    {
+                        "unit": "vasari_anticorvette_corvette",
+                        "count": [15, 15]
+                    },
+                    {
+                        "unit": "vasari_carrier_cruiser",
+                        "count": [6, 6]
+                    },
+                    {
+                        "unit": "vasari_fabricator_cruiser",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "vasari_heavy_cruiser",
+                        "count": [8, 8]
+                    },
+                    {
+                        "unit": "vasari_light_frigate",
+                        "count": [20, 20]
+                    },
+                    {
+                        "unit": "vasari_long_range_frigate",
+                        "count": [6, 6]
+                    },
+                    {
+                        "unit": "vasari_overseer_cruiser",
+                        "count": [2, 2]
+                    },
+                    {
+                        "unit": "vasari_raider_corvette",
+                        "count": [10, 10]
+                    },
+                    {
+                        "unit": "vasari_scout_corvette",
+                        "count": [2, 2]
+                    }]
+                }]
+            },
+            {
+                "player_index": 1,
+                "gravity_well_id": 3,
+                "spawn_units": {
+                    "required_units": [
+                    {
+                        "unit": "vasari_civilian_research_lab_structure",
+                        "count": [15, 15]
+                    },
+                    {
+                        "unit": "vasari_culture_center_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "vasari_exotic_factory_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "vasari_factory_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "vasari_fleet_beacon_structure",
+                        "count": [4, 4]
+                    },
+                    {
+                        "unit": "vasari_military_research_lab_structure",
+                        "count": [15, 15]
+                    },
+                    {
+                        "unit": "vasari_missile_defense_structure",
+                        "count": [10, 10]
+                    },
+                    {
+                        "unit": "vasari_phase_gate_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "vasari_phase_jump_inhibitor_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "vasari_phase_synchronizer_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "vasari_pulse_defense_structure",
+                        "count": [6, 6]
+                    },
+                    {
+                        "unit": "vasari_repair_platform_structure",
+                        "count": [1, 1]
+                    }]
+                },
+                "spawn_units_in_formation": [{
+                    "required_units": [
+                    {
+                        "unit": "vasari_loyalist_titan",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "vasari_battle_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "vasari_carrier_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "vasari_colony_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "vasari_marauder_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "vasari_siege_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "vasari_antiarmor_cruiser",
+                        "count": [5, 5]
+                    },
+                    {
+                        "unit": "vasari_anticorvette_corvette",
+                        "count": [15, 15]
+                    },
+                    {
+                        "unit": "vasari_carrier_cruiser",
+                        "count": [6, 6]
+                    },
+                    {
+                        "unit": "vasari_fabricator_cruiser",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "vasari_heavy_cruiser",
+                        "count": [8, 8]
+                    },
+                    {
+                        "unit": "vasari_light_frigate",
+                        "count": [20, 20]
+                    },
+                    {
+                        "unit": "vasari_long_range_frigate",
+                        "count": [6, 6]
+                    },
+                    {
+                        "unit": "vasari_overseer_cruiser",
+                        "count": [2, 2]
+                    },
+                    {
+                        "unit": "vasari_raider_corvette",
+                        "count": [10, 10]
+                    },
+                    {
+                        "unit": "vasari_scout_corvette",
+                        "count": [2, 2]
+                    }]
+                }]
+            }]
+        },
+        {
+            "faction_allowed": "vasari_rebel",
+            "faction_spawn_units": [
+            {
+                "player_index": 0,
+                "gravity_well_id": 2,
+                "spawn_units": {
+                    "required_units": [
+                    {
+                        "unit": "vasari_civilian_research_lab_structure",
+                        "count": [15, 15]
+                    },
+                    {
+                        "unit": "vasari_culture_center_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "vasari_exotic_factory_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "vasari_factory_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "vasari_fleet_beacon_structure",
+                        "count": [4, 4]
+                    },
+                    {
+                        "unit": "vasari_military_research_lab_structure",
+                        "count": [15, 15]
+                    },
+                    {
+                        "unit": "vasari_missile_defense_structure",
+                        "count": [10, 10]
+                    },
+                    {
+                        "unit": "vasari_phase_gate_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "vasari_phase_jump_inhibitor_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "vasari_phase_synchronizer_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "vasari_pulse_defense_structure",
+                        "count": [6, 6]
+                    },
+                    {
+                        "unit": "vasari_repair_platform_structure",
+                        "count": [1, 1]
+                    }]
+                },
+                "spawn_units_in_formation": [{
+                    "required_units": [
+                    {
+                        "unit": "vasari_rebel_titan",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "vasari_battle_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "vasari_carrier_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "vasari_colony_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "vasari_marauder_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "vasari_siege_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "vasari_antiarmor_cruiser",
+                        "count": [5, 5]
+                    },
+                    {
+                        "unit": "vasari_anticorvette_corvette",
+                        "count": [15, 15]
+                    },
+                    {
+                        "unit": "vasari_carrier_cruiser",
+                        "count": [6, 6]
+                    },
+                    {
+                        "unit": "vasari_fabricator_cruiser",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "vasari_heavy_cruiser",
+                        "count": [8, 8]
+                    },
+                    {
+                        "unit": "vasari_light_frigate",
+                        "count": [20, 20]
+                    },
+                    {
+                        "unit": "vasari_long_range_frigate",
+                        "count": [6, 6]
+                    },
+                    {
+                        "unit": "vasari_overseer_cruiser",
+                        "count": [2, 2]
+                    },
+                    {
+                        "unit": "vasari_raider_corvette",
+                        "count": [10, 10]
+                    },
+                    {
+                        "unit": "vasari_scout_corvette",
+                        "count": [2, 2]
+                    }]
+                }]
+            },
+            {
+                "player_index": 1,
+                "gravity_well_id": 3,
+                "spawn_units": {
+                    "required_units": [
+                    {
+                        "unit": "vasari_civilian_research_lab_structure",
+                        "count": [15, 15]
+                    },
+                    {
+                        "unit": "vasari_culture_center_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "vasari_exotic_factory_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "vasari_factory_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "vasari_fleet_beacon_structure",
+                        "count": [4, 4]
+                    },
+                    {
+                        "unit": "vasari_military_research_lab_structure",
+                        "count": [15, 15]
+                    },
+                    {
+                        "unit": "vasari_missile_defense_structure",
+                        "count": [10, 10]
+                    },
+                    {
+                        "unit": "vasari_phase_gate_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "vasari_phase_jump_inhibitor_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "vasari_phase_synchronizer_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "vasari_pulse_defense_structure",
+                        "count": [6, 6]
+                    },
+                    {
+                        "unit": "vasari_repair_platform_structure",
+                        "count": [1, 1]
+                    }]
+                },
+                "spawn_units_in_formation": [{
+                    "required_units": [
+                    {
+                        "unit": "vasari_rebel_titan",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "vasari_battle_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "vasari_carrier_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "vasari_colony_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "vasari_marauder_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "vasari_siege_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "vasari_antiarmor_cruiser",
+                        "count": [5, 5]
+                    },
+                    {
+                        "unit": "vasari_anticorvette_corvette",
+                        "count": [15, 15]
+                    },
+                    {
+                        "unit": "vasari_carrier_cruiser",
+                        "count": [6, 6]
+                    },
+                    {
+                        "unit": "vasari_fabricator_cruiser",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "vasari_heavy_cruiser",
+                        "count": [8, 8]
+                    },
+                    {
+                        "unit": "vasari_light_frigate",
+                        "count": [20, 20]
+                    },
+                    {
+                        "unit": "vasari_long_range_frigate",
+                        "count": [6, 6]
+                    },
+                    {
+                        "unit": "vasari_overseer_cruiser",
+                        "count": [2, 2]
+                    },
+                    {
+                        "unit": "vasari_raider_corvette",
+                        "count": [10, 10]
+                    },
+                    {
+                        "unit": "vasari_scout_corvette",
+                        "count": [2, 2]
+                    }]
+                }]
+            }]
+        }
+    ],
+    "starting_research":
+    [
+        {
+            "faction_allowed":"advent_loyalist",
+            "player_definitions":
+            [
+                {
+                    "player_index":0,
+                    "domains_definitions":
+                    [
+                        {
+                            "domain":"civilian",
+                            "unlocked_tier":4,
+                            "unlock_all_research_through_tier":4
+                        },
+                        {
+                            "domain":"military",
+                            "unlocked_tier":4,
+                            "unlock_all_research_through_tier":4
+                        }
+                    ],
+                    "other_unlocked_research":[]
+                },
+                {
+                    "player_index":1,
+                    "domains_definitions":
+                    [
+                        {
+                            "domain":"civilian",
+                            "unlocked_tier":4,
+                            "unlock_all_research_through_tier":4
+                        },
+                        {
+                            "domain":"military",
+                            "unlocked_tier":4,
+                            "unlock_all_research_through_tier":4
+                        }
+                    ],
+                    "other_unlocked_research":[]
+                }
+            ]
+        },
+        {
+            "faction_allowed":"advent_rebel",
+            "player_definitions":
+            [
+                {
+                    "player_index":0,
+                    "domains_definitions":
+                    [
+                        {
+                            "domain":"civilian",
+                            "unlocked_tier":4,
+                            "unlock_all_research_through_tier":4
+                        },
+                        {
+                            "domain":"military",
+                            "unlocked_tier":4,
+                            "unlock_all_research_through_tier":4
+                        }
+                    ],
+                    "other_unlocked_research":[]
+                },
+                {
+                    "player_index":1,
+                    "domains_definitions":
+                    [
+                        {
+                            "domain":"civilian",
+                            "unlocked_tier":4,
+                            "unlock_all_research_through_tier":4
+                        },
+                        {
+                            "domain":"military",
+                            "unlocked_tier":4,
+                            "unlock_all_research_through_tier":4
+                        }
+                    ],
+                    "other_unlocked_research":[]
+                }
+            ]
+        },
+        {
+            "faction_allowed":"trader_loyalist",
+            "player_definitions":
+            [
+                {
+                    "player_index":0,
+                    "domains_definitions":
+                    [
+                        {
+                            "domain":"civilian",
+                            "unlocked_tier":4,
+                            "unlock_all_research_through_tier":4
+                        },
+                        {
+                            "domain":"military",
+                            "unlocked_tier":4,
+                            "unlock_all_research_through_tier":4
+                        }
+                    ],
+                    "other_unlocked_research":[]
+                },
+                {
+                    "player_index":1,
+                    "domains_definitions":
+                    [
+                        {
+                            "domain":"civilian",
+                            "unlocked_tier":4,
+                            "unlock_all_research_through_tier":4
+                        },
+                        {
+                            "domain":"military",
+                            "unlocked_tier":4,
+                            "unlock_all_research_through_tier":4
+                        }
+                    ],
+                    "other_unlocked_research":[]
+                }
+            ]
+        },
+        {
+            "faction_allowed":"trader_rebel",
+            "player_definitions":
+            [
+                {
+                    "player_index":0,
+                    "domains_definitions":
+                    [
+                        {
+                            "domain":"civilian",
+                            "unlocked_tier":4,
+                            "unlock_all_research_through_tier":4
+                        },
+                        {
+                            "domain":"military",
+                            "unlocked_tier":4,
+                            "unlock_all_research_through_tier":4
+                        }
+                    ],
+                    "other_unlocked_research":[]
+                },
+                {
+                    "player_index":1,
+                    "domains_definitions":
+                    [
+                        {
+                            "domain":"civilian",
+                            "unlocked_tier":4,
+                            "unlock_all_research_through_tier":4
+                        },
+                        {
+                            "domain":"military",
+                            "unlocked_tier":4,
+                            "unlock_all_research_through_tier":4
+                        }
+                    ],
+                    "other_unlocked_research":[]
+                }
+            ]
+        },
+        {
+            "faction_allowed":"vasari_loyalist",
+            "player_definitions":
+            [
+                {
+                    "player_index":0,
+                    "domains_definitions":
+                    [
+                        {
+                            "domain":"civilian",
+                            "unlocked_tier":4,
+                            "unlock_all_research_through_tier":4
+                        },
+                        {
+                            "domain":"military",
+                            "unlocked_tier":4,
+                            "unlock_all_research_through_tier":4
+                        }
+                    ],
+                    "other_unlocked_research":[]
+                },
+                {
+                    "player_index":1,
+                    "domains_definitions":
+                    [
+                        {
+                            "domain":"civilian",
+                            "unlocked_tier":4,
+                            "unlock_all_research_through_tier":4
+                        },
+                        {
+                            "domain":"military",
+                            "unlocked_tier":4,
+                            "unlock_all_research_through_tier":4
+                        }
+                    ],
+                    "other_unlocked_research":[]
+                }
+            ]
+        },
+        {
+            "faction_allowed":"vasari_rebel",
+            "player_definitions":
+            [
+                {
+                    "player_index":0,
+                    "domains_definitions":
+                    [
+                        {
+                            "domain":"civilian",
+                            "unlocked_tier":4,
+                            "unlock_all_research_through_tier":4
+                        },
+                        {
+                            "domain":"military",
+                            "unlocked_tier":4,
+                            "unlock_all_research_through_tier":4
+                        }
+                    ],
+                    "other_unlocked_research":[]
+                },
+                {
+                    "player_index":1,
+                    "domains_definitions":
+                    [
+                        {
+                            "domain":"civilian",
+                            "unlocked_tier":4,
+                            "unlock_all_research_through_tier":4
+                        },
+                        {
+                            "domain":"military",
+                            "unlocked_tier":4,
+                            "unlock_all_research_through_tier":4
+                        }
+                    ],
+                    "other_unlocked_research":[]
+                }
+            ]
+        }
+    ],
+    "victory_type_gui":
+    {
+        "won_pictures": [
+            "superpowers_victory_picture"
+        ],
+        "lost_pictures": [
+            "superpowers_defeat_picture"
+        ],
+        "won_texts": [
+        {
+            "status": "player_victory.status.unique_scenario.superpowers.won",
+            "phrase": "player_victory.phrase.unique_scenario.superpowers.won"
+        }],
+        "lost_texts": [
+        {
+            "status": "player_victory.status.unique_scenario.superpowers.lost",
+            "phrase": "player_victory.phrase.unique_scenario.superpowers.lost"
+        }]
+    }
+}

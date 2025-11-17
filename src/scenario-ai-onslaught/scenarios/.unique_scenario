@@ -1,0 +1,11 @@
+{
+	"start_window_movie": "scenario_superpowers",
+    "start_window_movie_brush": "map_art_superpowers",
+    "start_window_description": "scenario.ai-onslaught.start_window_description",
+    "objective_description": "scenario.ai-onslaught.objective_description",
+	"disable_research":[
+        "advent_unlock_hyperspace_between_stars",
+        "trader_unlock_hyperspace_between_stars",
+        "vasari_unlock_hyperspace_between_stars"
+    ]
+}

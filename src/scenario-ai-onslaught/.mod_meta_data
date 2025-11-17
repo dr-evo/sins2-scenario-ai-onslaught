@@ -1,0 +1,11 @@
+{
+  "compatibility_version": 2,
+  "display_name": "Scenario - AI onslaught",
+  "display_version": "1.0.0",
+  "short_description": "Scenario - AI onslaught",
+  "long_description": "Scenario for 6 players vs 3 juiced up AI. Built for patch 1.45.",
+  "logos": {
+    "large_logo": "picture.png",
+    "small_logo": "picture.png"
+  }
+}

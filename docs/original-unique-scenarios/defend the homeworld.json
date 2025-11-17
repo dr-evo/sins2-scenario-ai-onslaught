@@ -1,0 +1,2788 @@
+{
+    "start_window_description": "scenario.defend_the_homeworld.start_window_description",
+    "start_window_movie_brush": "map_art_defend_the_homeworld",
+    "start_window_movie": "scenario_defend_the_homeworld",
+    "objective_description": "scenario.defend_the_homeworld.objective_description",
+    "remove_free_units": true,
+    "victory_overrides": [ "military", "home_planet" ],
+    "initial_timer_before_waves": 30,
+    "allowed_factions":
+    [
+        {
+            "player_index": 0,
+            "allowed_factions":
+            [
+                "dlc_trader_loyalist"
+            ]
+        },
+        {
+            "player_index": 1,
+            "allowed_factions":
+            [
+                "vasari_loyalist"
+            ]
+        },
+        {
+            "player_index": 2,
+            "allowed_factions":
+            [
+                "trader_rebel"
+            ]
+        },
+        {
+            "player_index": 3,
+            "allowed_factions":
+            [
+                "advent_loyalist"
+            ]
+        }
+    ],
+    "required_players":
+    [
+        {
+            "player_index": 0,
+            "human": true,
+            "ai": false
+        },
+        {
+            "player_index": 1,
+            "human": false,
+            "ai": true
+        },
+        {
+            "player_index": 2,
+            "human": false,
+            "ai": true
+        },
+        {
+            "player_index": 3,
+            "human": false,
+            "ai": true
+        }
+    ],
+    "ai_params":
+    [
+        {
+            "player_index": 1,
+            "min_difficulty": "impossible",
+            "chance_to_ally_with_other_players": [0.0, 0.0]
+        },
+        {
+            "player_index": 2,
+            "min_difficulty": "impossible",
+            "chance_to_ally_with_other_players": [0.0, 0.0]
+        },
+        {
+            "player_index": 3,
+            "min_difficulty": "impossible",
+            "chance_to_ally_with_other_players": [0.0, 0.0]
+        }
+    ],
+    "disable_research":[
+        "advent_unlock_hyperspace_between_stars",
+        "trader_unlock_hyperspace_between_stars",
+        "vasari_unlock_hyperspace_between_stars"
+    ],
+    "player_home_planet":
+    [
+        {
+            "player_index": 0,
+            "faction_allowed": "dlc_trader_loyalist",
+            "random_fixture_filling": "random_volcanic_planet",
+            "starting_track_levels":
+            {
+                "logistics": 5,
+                "defense": 5,
+                "commerce": 5,
+                "mining": 5,
+                "research": 5
+            },
+            "starting_is_colonized": true,
+            "starting_militia_supply": 0
+        }
+    ],
+    "waves": {
+        "wave_interval": 210,
+        "force_unlock_enemy_research_tier_interval": 5,
+        "unit_waves": [
+            {
+                "minimum_wave_count": 0,
+                "maximum_wave_count": 1,
+                "wave_spawn_units": [
+                    {
+                        "player_index": 1,
+                        "gravity_well_id": 12, 
+                        "minor_target_vector_ordered":
+                        [
+                            10, 8, 7
+                        ],
+                        "spawn_units": {
+                            "required_units": [
+                            {
+                                "unit": "vasari_scout_corvette",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [1, 1]
+                            },
+                            {
+                                "unit": "vasari_light_frigate",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [6, 9]
+                            },
+                            {
+                                "unit": "vasari_anticorvette_corvette",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [9, 12]
+                            },
+                            {
+                                "unit": "vasari_marauder_capital_ship",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [1, 1]
+                            }]
+                        }
+                    }
+                ]
+            },
+            {
+                "minimum_wave_count": 2,
+                "maximum_wave_count": 3,
+                "wave_spawn_units": [
+                    {
+                        "player_index": 1,
+                        "gravity_well_id": 12, 
+                        "minor_target_vector_ordered":
+                        [
+                            10, 8, 7
+                        ],
+                        "spawn_units": {
+                            "required_units": [
+                            {
+                                "unit": "vasari_light_frigate",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [9, 12]
+                            },
+                            {
+                                "unit": "vasari_long_range_frigate",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [6, 9]
+                            },
+                            {
+                                "unit": "vasari_carrier_cruiser",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [3, 6]
+                            },
+                            {
+                                "unit": "vasari_siege_cruiser",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [1, 3]
+                            }]
+                        }
+                    },
+                    {
+                        "player_index": 2,
+                        "gravity_well_id": 18,
+                        "minor_target_vector_ordered":
+                        [
+                            14, 16, 13
+                        ],
+                        "spawn_units": {
+                            "required_units": [
+                            {
+                                "unit": "trader_scout_corvette",
+                                "count": [1, 1]
+                            }]
+                        }
+                    }
+                ]
+            },
+            {
+                "minimum_wave_count": 2,
+                "maximum_wave_count": 3,
+                "wave_spawn_units": [
+                    {
+                        "player_index": 1,
+                        "gravity_well_id": 12, 
+                        "minor_target_vector_ordered":
+                        [
+                            10, 9, 7
+                        ],
+                        "spawn_units": {
+                            "required_units": [
+                            {
+                                "unit": "vasari_raider_corvette",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [6, 9]
+                            },
+                            {
+                                "unit": "vasari_anticorvette_corvette",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [9, 12]
+                            },
+                            {
+                                "unit": "vasari_heavy_cruiser",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [3, 6]
+                            },
+                            {
+                                "unit": "vasari_siege_cruiser",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [1, 3]
+                            }]
+                        }
+                    },
+                    {
+                        "player_index": 2,
+                        "gravity_well_id": 18,
+                        "minor_target_vector_ordered":
+                        [
+                            14, 16, 13
+                        ],
+                        "spawn_units": {
+                            "required_units": [
+                            {
+                                "unit": "trader_scout_corvette",
+                                "count": [1, 1]
+                            }]
+                        }
+                    }
+                ]
+            },
+            {
+                "minimum_wave_count": 4,
+                "maximum_wave_count": 5,
+                "wave_spawn_units": [
+                    {
+                        "player_index": 1,
+                        "gravity_well_id": 12,
+                        "minor_target_vector_ordered":
+                        [
+                            10, 8, 7
+                        ],
+                        "spawn_units": {
+                            "required_units": [
+                            {
+                                "unit": "vasari_light_frigate",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [9, 12]
+                            },
+                            {
+                                "unit": "vasari_antifighter_frigate",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [3, 6]
+                            },
+                            {
+                                "unit": "vasari_long_range_frigate",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [6, 9]
+                            },
+                            {
+                                "unit": "vasari_colony_capital_ship",
+                                "count": [1, 1]
+                            }]
+                        }
+                    },
+                    {
+                        "player_index": 2,
+                        "gravity_well_id": 18,
+                        "minor_target_vector_ordered":
+                        [
+                            14, 16, 13
+                        ],
+                        "spawn_units": {
+                            "required_units": [
+                            {
+                                "unit": "trader_light_frigate",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [5, 10]
+                            },
+                            {
+                                "unit": "trader_skirmisher_corvette_frigate",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [10, 15]
+                            },
+                            {
+                                "unit": "trader_missile_corvette",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [5, 10]
+                            },
+                            {
+                                "unit": "trader_siege_frigate",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [1, 3]
+                            }]
+                        }
+                    }
+                ]
+            },
+            {
+                "minimum_wave_count": 5,
+                "wave_spawn_units": [
+                    {
+                        "player_index": 1,
+                        "gravity_well_id": 12,
+                        "minor_target_vector_ordered":
+                        [
+                            10, 9, 7
+                        ],
+                        "spawn_units": {
+                            "required_units": [
+                            {
+                                "unit": "vasari_marauder_capital_ship",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [1, 1],
+                                "options": {
+                                    "level": 3,
+                                    "is_temporary_ruler_ship": false,
+                                    "items": [
+                                        "vasari_engine_boost"
+                                    ]
+                                }
+                            },
+                            {
+                                "unit": "vasari_anticorvette_corvette",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [12, 18]
+                            },
+                            {
+                                "unit": "vasari_raider_corvette",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [9, 12]
+                            }]
+                        }
+                    },
+                    {
+                        "player_index": 2,
+                        "gravity_well_id": 18,
+                        "minor_target_vector_ordered":
+                        [
+                            14, 16, 13
+                        ],
+                        "spawn_units": {
+                            "required_units": [
+                            {
+                                "unit": "trader_light_frigate",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [5, 10]
+                            },
+                            {
+                                "unit": "trader_long_range_cruiser",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [5, 10]
+                            },
+                            {
+                                "unit": "trader_heavy_cruiser",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [5, 10]
+                            },
+                            {
+                                "unit": "trader_siege_capital_ship",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [1, 1]
+                            }]
+                        }
+                    }
+                ]
+            },
+            {
+                "minimum_wave_count": 6,
+                "wave_spawn_units": [
+                    {
+                        "player_index": 1,
+                        "gravity_well_id": 12,
+                        "minor_target_vector_ordered":
+                        [
+                            10, 8, 7
+                        ],
+                        "spawn_units": {
+                            "required_units": [
+                            {
+                                "unit": "vasari_long_range_frigate",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [9, 12]
+                            },
+                            {
+                                "unit": "vasari_antifighter_frigate",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [9, 12]
+                            },
+                            {
+                                "unit": "vasari_antiarmor_cruiser",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [3, 6]
+                            },
+                            {
+                                "unit": "vasari_heavy_cruiser",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [3, 6]
+                            },
+                            {
+                                "unit": "vasari_siege_capital_ship",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [1, 1],
+                                "options": {
+                                    "level": 3,
+                                    "is_temporary_ruler_ship": false,
+                                    "items": [
+                                        "vasari_phase_missile_boost"
+                                    ]
+                                }
+                            }]
+                        }
+                    }
+                ]
+            },
+            {
+                "minimum_wave_count": 6,
+                "wave_spawn_units": [
+                    {
+                        "player_index": 1,
+                        "gravity_well_id": 12,
+                        "minor_target_vector_ordered":
+                        [
+                            10, 9, 7
+                        ],
+                        "spawn_units": {
+                            "required_units": [
+                            {
+                                "unit": "vasari_carrier_cruiser",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [3, 6]
+                            },
+                            {
+                                "unit": "vasari_light_frigate",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [12, 18]
+                            },
+                            {
+                                "unit": "vasari_antifighter_frigate",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [9, 12]
+                            },
+                            {
+                                "unit": "vasari_carrier_capital_ship",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [1, 1],
+                                "options": {
+                                    "level": 3,
+                                    "is_temporary_ruler_ship": false,
+                                    "items": [
+                                        "vasari_strikecraft_armor"
+                                    ]
+                                }
+                            }]
+                        }
+                    }
+                ]
+            },
+            {
+                "minimum_wave_count": 6,
+                "wave_spawn_units": [
+                    {
+                        "player_index": 2,
+                        "gravity_well_id": 18,
+                        "minor_target_vector_ordered":
+                        [
+                            14, 16, 13
+                        ],
+                        "spawn_units": {
+                            "required_units": [
+                            {
+                                "unit": "trader_antifighter_frigate",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [10, 15]
+                            },
+                            {
+                                "unit": "trader_heavy_cruiser",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [5, 10]
+                            },
+                            {
+                                "unit": "trader_robotics_cruiser",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [3, 5]
+                            },
+                            {
+                                "unit": "trader_battle_capital_ship",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [1, 1],
+                                "options": {
+                                    "level": 3,
+                                    "items": [
+                                        "trader_flak_burst",
+                                        "trader_antimatter_engine",
+                                        "trader_salvage_kit"
+                                    ]
+                                }
+                            }]
+                        }
+                    }
+                ]
+            },
+            {
+                "minimum_wave_count": 6,
+                "wave_spawn_units": [
+                    {
+                        "player_index": 2,
+                        "gravity_well_id": 18,
+                        "minor_target_vector_ordered":
+                        [
+                            14, 16, 13
+                        ],
+                        "spawn_units": {
+                            "required_units": [
+                            {
+                                "unit": "trader_missile_corvette",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [10, 15]
+                            },
+                            {
+                                "unit": "trader_long_range_cruiser",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [5, 10]
+                            },
+                            {
+                                "unit": "trader_carrier_cruiser",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [3, 5]
+                            },
+                            {
+                                "unit": "trader_carrier_capital_ship",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [1, 1],
+                                "options": {
+                                    "level": 3,
+                                    "items": [
+                                        "trader_flak_burst",
+                                        "trader_reserve_squadron_hangar",
+                                        "trader_salvage_kit"
+                                    ]
+                                }
+                            }]
+                        }
+                    }
+                ]
+            },
+            {
+                "minimum_wave_count": 5,
+                "maximum_wave_count": 7,
+                "wave_spawn_units": [
+                    {
+                        "player_index": 2,
+                        "gravity_well_id": 18,
+                        "minor_target_vector_ordered":
+                        [
+                            14, 15, 13
+                        ],
+                        "spawn_units": {
+                            "required_units": [
+                            {
+                                "unit": "trader_light_frigate",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [10, 15]
+                            },
+                            {
+                                "unit": "trader_skirmisher_corvette_frigate",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [10, 15]
+                            },
+                            {
+                                "unit": "trader_antiarmor_frigate",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [5, 10]
+                            },
+                            {
+                                "unit": "trader_support_capital_ship",
+                                "count": [1, 1],
+                                "options": {
+                                    "level": 3,
+                                    "items": [
+                                        "trader_antimatter_engine",
+                                        "trader_salvage_kit"
+                                    ]
+                                }
+                            }]
+                        }
+                    },
+                    {
+                        "player_index": 3,
+                        "gravity_well_id": 26,
+                        "minor_target_vector_ordered":
+                        [
+                            59, 20, 62, 19
+                        ],
+                        "spawn_units": {
+                            "required_units": [
+                            {
+                                "unit": "advent_scout_corvette",
+                                "count": [3, 3]
+                            }]
+                        }
+                    }
+                ]
+            },
+            {
+                "minimum_wave_count": 8,
+                "wave_spawn_units": [
+                    {
+                        "player_index": 3,
+                        "gravity_well_id": 26,
+                        "minor_target_vector_ordered":
+                        [
+                            59, 20, 62, 19
+                        ],
+                        "spawn_units": {
+                            "required_units": [
+                            {
+                                "unit": "advent_light_frigate",
+                                "wave_strength_log_scalar": 1,
+                                "count": [10, 15]
+                            },
+                            {
+                                "unit": "advent_missile_frigate",
+                                "wave_strength_log_scalar": 1,
+                                "count": [5, 10]
+                            },
+                            {
+                                "unit": "advent_long_range_cruiser",
+                                "wave_strength_log_scalar": 1,
+                                "count": [5, 10]
+                            },
+                            {
+                                "unit": "advent_battle_psionic_capital_ship",
+                                "wave_strength_log_scalar": 1,
+                                "count": [1, 1]
+                            }]
+                        }
+                    }
+                ]
+            },
+            {
+                "minimum_wave_count": 8,
+                "wave_spawn_units": [
+                    {
+                        "player_index": 3,
+                        "gravity_well_id": 26,
+                        "minor_target_vector_ordered":
+                        [
+                            59, 20, 60, 19
+                        ],
+                        "spawn_units": {
+                            "required_units": [
+                            {
+                                "unit": "advent_defense_cruiser",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [5, 10]
+                            },
+                            {
+                                "unit": "advent_heavy_cruiser",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [5, 10]
+                            },
+                            {
+                                "unit": "advent_siege_frigate",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [3, 5]
+                            },
+                            {
+                                "unit": "advent_battle_psionic_capital_ship",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [1, 1]
+                            }]
+                        }
+                    }
+                ]
+            },
+            {
+                "minimum_wave_count": 8,
+                "wave_spawn_units": [
+                    {
+                        "player_index": 3,
+                        "gravity_well_id": 26,
+                        "minor_target_vector_ordered":
+                        [
+                            59, 20, 62, 19
+                        ],
+                        "spawn_units": {
+                            "required_units": [
+                            {
+                                "unit": "advent_light_frigate",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [10, 15]
+                            },
+                            {
+                                "unit": "advent_carrier_cruiser",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [5, 10]
+                            },
+                            {
+                                "unit": "advent_guardian_cruiser",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [3, 5]
+                            },
+                            {
+                                "unit": "advent_carrier_capital_ship",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [1, 1],
+                                "options": {
+                                    "level": 3,
+                                    "is_temporary_ruler_ship": false,
+                                    "items": [
+                                        "advent_shield_boost",
+                                        "advent_energy_booster",
+                                        "advent_shield_battery"
+                                    ]
+                                }
+                            }]
+                        }
+                    }
+                ]
+            },
+            {
+                "minimum_wave_count": 10,
+                "wave_spawn_units": [
+                    {
+                        "player_index": 1,
+                        "gravity_well_id": 12,
+                        "minor_target_vector_ordered":
+                        [
+                            10, 8, 7
+                        ],
+                        "spawn_units": {
+                            "required_units": [
+                            {
+                                "unit": "vasari_antiarmor_cruiser",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [0, 3]
+                            },
+                            {
+                                "unit": "vasari_anticorvette_corvette",
+                                "wave_strength_log_scalar": 3.0,
+                                "count": [0, 6]
+                            },
+                            {
+                                "unit": "vasari_antifighter_frigate",
+                                "wave_strength_log_scalar": 3.0,
+                                "count": [0, 3]
+                            },
+                            {
+                                "unit": "vasari_heavy_cruiser",
+                                "wave_strength_log_scalar": 3.0,
+                                "count": [0, 3]
+                            },
+                            {
+                                "unit": "vasari_light_frigate",
+                                "wave_strength_log_scalar": 3.0,
+                                "count": [3, 9]
+                            },
+                            {
+                                "unit": "vasari_long_range_frigate",
+                                "wave_strength_log_scalar": 3.0,
+                                "count": [0, 6]
+                            },
+                            {
+                                "unit": "vasari_raider_corvette",
+                                "wave_strength_log_scalar": 3.0,
+                                "count": [0, 6]
+                            },
+                            {
+                                "unit": "vasari_battle_capital_ship",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [0, 1],
+                                "options": {
+                                    "level": 4,
+                                    "is_temporary_ruler_ship": false,
+                                    "items": []
+                                }
+                            },
+                            {
+                                "unit": "vasari_carrier_capital_ship",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [0, 1],
+                                "options": {
+                                    "level": 4,
+                                    "is_temporary_ruler_ship": false,
+                                    "items": []
+                                }
+                            },
+                            {
+                                "unit": "vasari_colony_capital_ship",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [0, 1],
+                                "options": {
+                                    "level": 4,
+                                    "is_temporary_ruler_ship": false,
+                                    "items": []
+                                }
+                            },
+                            {
+                                "unit": "vasari_marauder_capital_ship",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [0, 1],
+                                "options": {
+                                    "level": 4,
+                                    "is_temporary_ruler_ship": false,
+                                    "items": []
+                                }
+                            },
+                            {
+                                "unit": "vasari_siege_capital_ship",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [0, 1],
+                                "options": {
+                                    "level": 4,
+                                    "is_temporary_ruler_ship": false,
+                                    "items": []
+                                }
+                            }]
+                        }
+                    },
+                    {
+                        "player_index": 2,
+                        "gravity_well_id": 18,
+                        "minor_target_vector_ordered":
+                        [
+                            14, 16, 13
+                        ],
+                        "spawn_units": {
+                            "required_units": [
+                            {
+                                "unit": "trader_antiarmor_frigate",
+                                "wave_strength_log_scalar": 3.0,
+                                "count": [0, 5]
+                            },
+                            {
+                                "unit": "trader_antifighter_frigate",
+                                "wave_strength_log_scalar": 3.0,
+                                "count": [0, 5]
+                            },
+                            {
+                                "unit": "trader_carrier_cruiser",
+                                "wave_strength_log_scalar": 3.0,
+                                "count": [0, 3]
+                            },
+                            {
+                                "unit": "trader_heavy_cruiser",
+                                "wave_strength_log_scalar": 3.0,
+                                "count": [0, 3]
+                            },
+                            {
+                                "unit": "trader_light_frigate",
+                                "wave_strength_log_scalar": 3.0,
+                                "count": [5, 10]
+                            },
+                            {
+                                "unit": "trader_long_range_cruiser",
+                                "wave_strength_log_scalar": 3.0,
+                                "count": [0, 5]
+                            },
+                            {
+                                "unit": "trader_missile_corvette",
+                                "wave_strength_log_scalar": 3.0,
+                                "count": [0, 5]
+                            },
+                            {
+                                "unit": "trader_robotics_cruiser",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [0, 3]
+                            },
+                            {
+                                "unit": "trader_skirmisher_corvette_frigate",
+                                "wave_strength_log_scalar": 3.0,
+                                "count": [0, 5]
+                            },
+                            {
+                                "unit": "trader_torpedo_cruiser",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [0, 3]
+                            },
+                            {
+                                "unit": "trader_battle_capital_ship",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [0, 1],
+                                "options": {
+                                    "level": 4,
+                                    "is_temporary_ruler_ship": false,
+                                    "items": []
+                                }
+                            },
+                            {
+                                "unit": "trader_carrier_capital_ship",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [0, 1],
+                                "options": {
+                                    "level": 4,
+                                    "is_temporary_ruler_ship": false,
+                                    "items": []
+                                }
+                            },
+                            {
+                                "unit": "trader_colony_capital_ship",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [0, 1],
+                                "options": {
+                                    "level": 4,
+                                    "is_temporary_ruler_ship": false,
+                                    "items": []
+                                }
+                            },
+                            {
+                                "unit": "trader_siege_capital_ship",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [0, 1],
+                                "options": {
+                                    "level": 4,
+                                    "is_temporary_ruler_ship": false,
+                                    "items": []
+                                }
+                            },
+                            {
+                                "unit": "trader_support_capital_ship",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [0, 1],
+                                "options": {
+                                    "level": 4,
+                                    "is_temporary_ruler_ship": false,
+                                    "items": []
+                                }
+                            }]
+                        }
+                    },
+                    {
+                        "player_index": 3,
+                        "gravity_well_id": 26,
+                        "minor_target_vector_ordered":
+                        [
+                            59, 20, 62, 19
+                        ],
+                        "spawn_units": {
+                            "required_units": [
+                            {
+                                "unit": "advent_carrier_cruiser",
+                                "wave_strength_log_scalar": 3.0,
+                                "count": [0, 3]
+                            },
+                            {
+                                "unit": "advent_defense_cruiser",
+                                "wave_strength_log_scalar": 3.0,
+                                "count": [0, 5]
+                            },
+                            {
+                                "unit": "advent_guardian_cruiser",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [0, 3]
+                            },
+                            {
+                                "unit": "advent_gunship_corvette",
+                                "wave_strength_log_scalar": 3.0,
+                                "count": [0, 5]
+                            },
+                            {
+                                "unit": "advent_heavy_cruiser",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [0, 3]
+                            },
+                            {
+                                "unit": "advent_light_frigate",
+                                "wave_strength_log_scalar": 3.0,
+                                "count": [5, 10]
+                            },
+                            {
+                                "unit": "advent_long_range_cruiser",
+                                "wave_strength_log_scalar": 3.0,
+                                "count": [0, 5]
+                            },
+                            {
+                                "unit": "advent_missile_frigate",
+                                "wave_strength_log_scalar": 3.0,
+                                "count": [0, 5]
+                            },
+                            {
+                                "unit": "advent_subjugator_cruiser",
+                                "wave_strength_log_scalar": 3.0,
+                                "count": [0, 3]
+                            },
+                            {
+                                "unit": "advent_battle_capital_ship",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [0, 1],
+                                "options": {
+                                    "level": 4,
+                                    "is_temporary_ruler_ship": false,
+                                    "items": []
+                                }
+                            },
+                            {
+                                "unit": "advent_battle_psionic_capital_ship",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [0, 1],
+                                "options": {
+                                    "level": 4,
+                                    "is_temporary_ruler_ship": false,
+                                    "items": []
+                                }
+                            },
+                            {
+                                "unit": "advent_carrier_capital_ship",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [0, 1],
+                                "options": {
+                                    "level": 4,
+                                    "is_temporary_ruler_ship": false,
+                                    "items": []
+                                }
+                            },
+                            {
+                                "unit": "advent_colony_capital_ship",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [0, 1],
+                                "options": {
+                                    "level": 4,
+                                    "is_temporary_ruler_ship": false,
+                                    "items": []
+                                }
+                            },
+                            {
+                                "unit": "advent_planet_psionic_capital_ship",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [0, 1],
+                                "options": {
+                                    "level": 4,
+                                    "is_temporary_ruler_ship": false,
+                                    "items": []
+                                }
+                            }]
+                        }
+                    }
+                ]
+            },
+            {
+                "minimum_wave_count": 20,
+                "wave_spawn_units": [
+                    {
+                        "player_index": 1,
+                        "gravity_well_id": 12,
+                        "minor_target_vector_ordered":
+                        [
+                            10, 8, 7
+                        ],
+                        "spawn_units": {
+                            "required_units": [
+                            {
+                                "unit": "vasari_antiarmor_cruiser",
+                                "wave_strength_log_scalar": 6.0,
+                                "count": [6, 9]
+                            },
+                            {
+                                "unit": "vasari_long_range_frigate",
+                                "wave_strength_log_scalar": 6.0,
+                                "count": [9, 12]
+                            },
+                            {
+                                "unit": "vasari_raider_corvette",
+                                "wave_strength_log_scalar": 6.0,
+                                "count": [12, 18]
+                            },
+                            {
+                                "unit": "vasari_siege_capital_ship",
+                                "wave_strength_log_scalar": 3.0,
+                                "count": [3, 4],
+                                "options": {
+                                    "level": 5,
+                                    "is_temporary_ruler_ship": false,
+                                    "items": [
+                                        "vasari_self_repairing_armor",
+                                        "vasari_phase_missile_boost"
+                                    ]
+                                }
+                            },
+                            {
+                                "unit": "vasari_carrier_capital_ship",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [2, 3],
+                                "options": {
+                                    "level": 8,
+                                    "is_temporary_ruler_ship": false,
+                                    "items": [
+                                        "vasari_self_repairing_armor",
+                                        "vasari_strikecraft_armor"
+                                    ]
+                                }
+                            }]
+                        }
+                    }
+                ]
+            },
+            {
+                "minimum_wave_count": 20,
+                "wave_spawn_units": [
+                    {
+                        "player_index": 2,
+                        "gravity_well_id": 18,
+                        "minor_target_vector_ordered":
+                        [
+                            14, 16, 13
+                        ],
+                        "spawn_units": {
+                            "required_units": [
+                            {
+                                "unit": "trader_antiarmor_frigate",
+                                "wave_strength_log_scalar": 6.0,
+                                "count": [10, 15]
+                            },
+                            {
+                                "unit": "trader_missile_corvette",
+                                "wave_strength_log_scalar": 6.0,
+                                "count": [15, 20]
+                            },
+                            {
+                                "unit": "trader_torpedo_cruiser",
+                                "wave_strength_log_scalar": 6.0,
+                                "count": [5, 10]
+                            },
+                            {
+                                "unit": "trader_battle_capital_ship",
+                                "wave_strength_log_scalar": 3.0,
+                                "count": [3, 4],
+                                "options": {
+                                    "level": 3,
+                                    "is_temporary_ruler_ship": false,
+                                    "items": [
+                                        "trader_flak_burst",
+                                        "trader_heavy_gauss_slugs"
+                                    ]
+                                }
+                            },
+                            {
+                                "unit": "trader_support_capital_ship",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [2, 3],
+                                "options": {
+                                    "level": 8,
+                                    "is_temporary_ruler_ship": false,
+                                    "items": [
+                                        "trader_flak_burst",
+                                        "trader_antimatter_engine"
+                                    ]
+                                }
+                            }]
+                        }
+                    }
+                ]
+            },
+            {
+                "minimum_wave_count": 20,
+                "wave_spawn_units": [
+                    {
+                        "player_index": 3,
+                        "gravity_well_id": 26,
+                        "minor_target_vector_ordered":
+                        [
+                            59, 20, 62, 19
+                        ],
+                        "spawn_units": {
+                            "required_units": [
+                            {
+                                "unit": "advent_guardian_cruiser",
+                                "wave_strength_log_scalar": 6.0,
+                                "count": [5, 10]
+                            },
+                            {
+                                "unit": "advent_defense_cruiser",
+                                "wave_strength_log_scalar": 6.0,
+                                "count": [10, 15]
+                            },
+                            {
+                                "unit": "advent_heavy_cruiser",
+                                "wave_strength_log_scalar": 6.0,
+                                "count": [10, 15]
+                            },
+                            {
+                                "unit": "advent_battle_capital_ship",
+                                "wave_strength_log_scalar": 3.0,
+                                "count": [3, 4],
+                                "options": {
+                                    "level": 3,
+                                    "is_temporary_ruler_ship": false,
+                                    "items": [
+                                        "advent_focus_armor",
+                                        "advent_harmony_circuit",
+                                        "advent_energy_booster",
+                                        "advent_plasma_booster"
+                                    ]
+                                }
+                            },
+                            {
+                                "unit": "advent_planet_psionic_capital_ship",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [2, 3],
+                                "options": {
+                                    "level": 8,
+                                    "is_temporary_ruler_ship": false,
+                                    "items": [
+                                        "advent_shield_boost",
+                                        "advent_psionic_dynamo",
+                                        "advent_energy_booster",
+                                        "advent_plasma_booster"
+                                    ]
+                                }
+                            }]
+                        }
+                    }
+                ]
+            },
+            {
+                "minimum_wave_count": 25,
+                "wave_spawn_units": [
+                    {
+                        "player_index": 1,
+                        "gravity_well_id": 12,
+                        "minor_target_vector_ordered":
+                        [
+                            10, 8, 7
+                        ],
+                        "spawn_units": {
+                            "required_units": [
+                            {
+                                "unit": "vasari_antiarmor_cruiser",
+                                "wave_strength_log_scalar": 5.0,
+                                "count": [3, 6]
+                            },
+                            {
+                                "unit": "vasari_long_range_frigate",
+                                "wave_strength_log_scalar": 5.0,
+                                "count": [3, 6]
+                            },
+                            {
+                                "unit": "vasari_raider_corvette",
+                                "wave_strength_log_scalar": 5.0,
+                                "count": [6, 9]
+                            },
+                            {
+                                "unit": "vasari_siege_capital_ship",
+                                "wave_strength_log_scalar": 3.0,
+                                "count": [1, 1],
+                                "options": {
+                                    "level": 5,
+                                    "is_temporary_ruler_ship": false,
+                                    "items": [
+                                        "vasari_self_repairing_armor",
+                                        "vasari_phase_missile_boost"
+                                    ]
+                                }
+                            },
+                            {
+                                "unit": "vasari_carrier_capital_ship",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [1, 1],
+                                "options": {
+                                    "level": 8,
+                                    "is_temporary_ruler_ship": false,
+                                    "items": [
+                                        "vasari_self_repairing_armor",
+                                        "vasari_strikecraft_armor"
+                                    ]
+                                }
+                            }]
+                        }
+                    },
+                    {
+                        "player_index": 2,
+                        "gravity_well_id": 18,
+                        "minor_target_vector_ordered":
+                        [
+                            14, 16, 13
+                        ],
+                        "spawn_units": {
+                            "required_units": [
+                            {
+                                "unit": "trader_antiarmor_frigate",
+                                "wave_strength_log_scalar": 5.0,
+                                "count": [3, 5]
+                            },
+                            {
+                                "unit": "trader_missile_corvette",
+                                "wave_strength_log_scalar": 5.0,
+                                "count": [5, 10]
+                            },
+                            {
+                                "unit": "trader_torpedo_cruiser",
+                                "wave_strength_log_scalar": 5.0,
+                                "count": [3, 5]
+                            },
+                            {
+                                "unit": "trader_battle_capital_ship",
+                                "wave_strength_log_scalar": 3.0,
+                                "count": [1, 1],
+                                "options": {
+                                    "level": 3,
+                                    "is_temporary_ruler_ship": false,
+                                    "items": [
+                                        "trader_flak_burst",
+                                        "trader_heavy_gauss_slugs"
+                                    ]
+                                }
+                            },
+                            {
+                                "unit": "trader_support_capital_ship",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [1, 1],
+                                "options": {
+                                    "level": 8,
+                                    "is_temporary_ruler_ship": false,
+                                    "items": [
+                                        "trader_flak_burst",
+                                        "trader_antimatter_engine"
+                                    ]
+                                }
+                            }]
+                        }
+                    },
+                    {
+                        "player_index": 3,
+                        "gravity_well_id": 26,
+                        "minor_target_vector_ordered":
+                        [
+                            59, 20, 62, 19
+                        ],
+                        "spawn_units": {
+                            "required_units": [
+                            {
+                                "unit": "advent_guardian_cruiser",
+                                "wave_strength_log_scalar": 5.0,
+                                "count": [3, 5]
+                            },
+                            {
+                                "unit": "advent_defense_cruiser",
+                                "wave_strength_log_scalar": 5.0,
+                                "count": [5, 10]
+                            },
+                            {
+                                "unit": "advent_heavy_cruiser",
+                                "wave_strength_log_scalar": 5.0,
+                                "count": [5, 10]
+                            },
+                            {
+                                "unit": "advent_battle_capital_ship",
+                                "wave_strength_log_scalar": 3.0,
+                                "count": [1, 2],
+                                "options": {
+                                    "level": 3,
+                                    "is_temporary_ruler_ship": false,
+                                    "items": [
+                                        "advent_focus_armor",
+                                        "advent_harmony_circuit",
+                                        "advent_energy_booster",
+                                        "advent_plasma_booster"
+                                    ]
+                                }
+                            },
+                            {
+                                "unit": "advent_planet_psionic_capital_ship",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [1, 1],
+                                "options": {
+                                    "level": 8,
+                                    "is_temporary_ruler_ship": false,
+                                    "items": [
+                                        "advent_shield_boost",
+                                        "advent_psionic_dynamo",
+                                        "advent_energy_booster",
+                                        "advent_plasma_booster"
+                                    ]
+                                }
+                            }]
+                        }
+                    }
+                ]
+            },
+            {
+                "is_unique_wave": true,
+                "minimum_wave_count": 25,
+                "wave_spawn_units": [
+                    {
+                        "player_index": 2,
+                        "gravity_well_id": 12,
+                        "minor_target_vector_ordered":
+                        [
+                            10, 8, 7
+                        ],
+                        "spawn_units": {
+                            "required_units": [
+                            {
+                                "unit": "pirate_light_frigate",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [15, 20]
+                            },
+                            {
+                                "unit": "pirate_heavy_cruiser",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [10, 15]
+                            },
+                            {
+                                "unit": "pirate_siege_frigate",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [3, 5]
+                            }]
+                        }
+                    },
+                    {
+                        "player_index": 2,
+                        "gravity_well_id": 18,
+                        "minor_target_vector_ordered":
+                        [
+                            14, 16, 13
+                        ],
+                        "spawn_units": {
+                            "required_units": [
+                            {
+                                "unit": "pirate_light_frigate",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [15, 20]
+                            },
+                            {
+                                "unit": "pirate_heavy_cruiser",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [10, 15]
+                            },
+                            {
+                                "unit": "pirate_siege_frigate",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [3, 5]
+                            }]
+                        }
+                    },
+                    {
+                        "player_index": 2,
+                        "gravity_well_id": 26,
+                        "minor_target_vector_ordered":
+                        [
+                            59, 20, 62, 19
+                        ],
+                        "spawn_units": {
+                            "required_units": [
+                            {
+                                "unit": "pirate_light_frigate",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [15, 20]
+                            },
+                            {
+                                "unit": "pirate_heavy_cruiser",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [10, 15]
+                            },
+                            {
+                                "unit": "pirate_siege_frigate",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [3, 5]
+                            }]
+                        }
+                    }
+                ]
+            },
+            {
+                "is_unique_wave": true,
+                "minimum_wave_count": 6,
+                "wave_spawn_units": [
+                    {
+                        "player_index": 1,
+                        "gravity_well_id": 12,
+                        "minor_target_vector_ordered":
+                        [
+                            10, 8, 7
+                        ],
+                        "spawn_units": {
+                            "required_units": [
+                            {
+                                "unit": "vasari_loyalist_titan",
+                                "count": [1, 1],
+                                "options": {
+                                    "level": 1,
+                                    "is_temporary_ruler_ship": false,
+                                    "items": [
+                                        "vasari_loyalist_titan_hull_plating_0",
+                                        "vasari_loyalist_titan_hangar",
+                                        "vasari_loyalist_titan_unlock_wave_weapon",
+                                        "vasari_wave_boost"
+                                    ]
+                                }
+                            },
+                            {
+                                "unit": "vasari_siege_capital_ship",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [1, 1],
+                                "options": {
+                                    "level": 3,
+                                    "is_temporary_ruler_ship": false,
+                                    "items": [
+                                        "vasari_self_repairing_armor",
+                                        "vasari_phase_missile_boost",
+                                        "vasari_beam_boost",
+                                        "vasari_antimatter_recharger"
+                                    ]
+                                }
+                            },
+                            {
+                                "unit": "vasari_anticorvette_corvette",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [9, 12]
+                            },
+                            {
+                                "unit": "vasari_antiarmor_cruiser",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [6, 9]
+                            },
+                            {
+                                "unit": "vasari_overseer_cruiser",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [1, 3]
+                            }]
+                        }
+                    }
+                ]
+            },
+            {
+                "is_unique_wave": true,
+                "minimum_wave_count": 17,
+                "wave_spawn_units": [
+                    {
+                        "player_index": 1,
+                        "gravity_well_id": 12,
+                        "minor_target_vector_ordered":
+                        [
+                            10, 8, 7
+                        ],
+                        "spawn_units": {
+                            "required_units": [
+                            {
+                                "unit": "vasari_loyalist_titan",
+                                "count": [1, 1],
+                                "options": {
+                                    "level": 4,
+                                    "is_temporary_ruler_ship": false,
+                                    "items": [
+                                        "vasari_loyalist_titan_hull_plating_0",
+                                        "vasari_loyalist_titan_hull_plating_1",
+                                        "vasari_self_repairing_armor",
+                                        "vasari_loyalist_titan_unlock_wave_weapon",
+                                        "vasari_wave_boost"
+                                    ]
+                                }
+                            },
+                            {
+                                "unit": "vasari_siege_capital_ship",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [1, 2],
+                                "options": {
+                                    "level": 5,
+                                    "is_temporary_ruler_ship": false,
+                                    "items": [
+                                        "vasari_self_repairing_armor",
+                                        "vasari_phase_missile_boost",
+                                        "vasari_beam_boost",
+                                        "vasari_antimatter_recharger"
+                                    ]
+                                }
+                            },
+                            {
+                                "unit": "vasari_carrier_capital_ship",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [1, 2],
+                                "options": {
+                                    "level": 5,
+                                    "is_temporary_ruler_ship": false,
+                                    "items": [
+                                        "vasari_self_repairing_armor",
+                                        "vasari_phase_shield",
+                                        "vasari_strikecraft_armor",
+                                        "vasari_antimatter_recharger"
+                                    ]
+                                }
+                            },
+                            {
+                                "unit": "vasari_anticorvette_corvette",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [9, 12]
+                            },
+                            {
+                                "unit": "vasari_antiarmor_cruiser",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [6, 9]
+                            },
+                            {
+                                "unit": "vasari_overseer_cruiser",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [1, 3]
+                            }]
+                        }
+                    }
+                ]
+            },
+            {
+                "minimum_wave_count": 39,
+                "wave_spawn_units": [
+                    {
+                        "player_index": 1,
+                        "gravity_well_id": 12,
+                        "minor_target_vector_ordered":
+                        [
+                            10, 8, 7
+                        ],
+                        "spawn_units": {
+                            "required_units": [
+                            {
+                                "unit": "vasari_loyalist_titan",
+                                "count": [1, 1],
+                                "options": {
+                                    "level": 7,
+                                    "is_temporary_ruler_ship": false,
+                                    "items": [
+                                        "vasari_loyalist_titan_hull_plating_0",
+                                        "vasari_loyalist_titan_hull_plating_1",
+                                        "vasari_loyalist_titan_hull_plating_2",
+                                        "vasari_self_repairing_armor",
+                                        "vasari_loyalist_titan_unlock_phase_cannon_weapon",
+                                        "vasari_loyalist_titan_unlock_wave_weapon",
+                                        "vasari_wave_boost",
+                                        "vasari_phase_missile_boost"
+                                    ]
+                                }
+                            },
+                            {
+                                "unit": "vasari_siege_capital_ship",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [2, 3],
+                                "options": {
+                                    "level": 9,
+                                    "is_temporary_ruler_ship": false,
+                                    "items": [
+                                        "vasari_self_repairing_armor",
+                                        "vasari_phase_missile_boost",
+                                        "vasari_beam_boost",
+                                        "vasari_antimatter_recharger"
+                                    ]
+                                }
+                            },
+                            {
+                                "unit": "vasari_carrier_capital_ship",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [2, 3],
+                                "options": {
+                                    "level": 9,
+                                    "is_temporary_ruler_ship": false,
+                                    "items": [
+                                        "vasari_self_repairing_armor",
+                                        "vasari_phase_shield",
+                                        "vasari_strikecraft_armor",
+                                        "vasari_antimatter_recharger"
+                                    ]
+                                }
+                            },
+                            {
+                                "unit": "vasari_anticorvette_corvette",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [12, 15]
+                            },
+                            {
+                                "unit": "vasari_antiarmor_cruiser",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [9, 12]
+                            },
+                            {
+                                "unit": "vasari_overseer_cruiser",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [1, 3]
+                            }]
+                        }
+                    }
+                ]
+            },
+            {
+                "is_unique_wave": true,
+                "minimum_wave_count": 10,
+                "wave_spawn_units": [
+                    {
+                        "player_index": 2,
+                        "gravity_well_id": 18,
+                        "minor_target_vector_ordered":
+                        [
+                            14, 16, 13
+                        ],
+                        "spawn_units": {
+                            "required_units": [
+                            {
+                                "unit": "trader_rebel_titan",
+                                "count": [1, 1],
+                                "options": {
+                                    "level": 1,
+                                    "is_temporary_ruler_ship": false,
+                                    "items": [
+                                        "trader_rebel_titan_hangar",
+                                        "trader_reserve_squadron_hangar",
+                                        "trader_heavy_gauss_slugs",
+                                        "trader_flak_burst"
+                                    ]
+                                }
+                            },
+                            {
+                                "unit": "trader_siege_capital_ship",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [1, 1],
+                                "options": {
+                                    "level": 3,
+                                    "is_temporary_ruler_ship": false,
+                                    "items": [
+                                        "trader_flak_burst",
+                                        "trader_heavy_gauss_slugs",
+                                        "trader_rapid_autoloader",
+                                        "trader_missile_guidance_computer"
+                                    ]
+                                }
+                            },
+                            {
+                                "unit": "trader_support_capital_ship",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [1, 1],
+                                "options": {
+                                    "level": 3,
+                                    "is_temporary_ruler_ship": false,
+                                    "items": [
+                                        "trader_flak_burst",
+                                        "trader_antimatter_engine",
+                                        "trader_reserve_squadron_hangar",
+                                        "trader_targeting_array"
+                                    ]
+                                }
+                            },
+                            {
+                                "unit": "trader_antifighter_frigate",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [5, 10]
+                            },
+                            {
+                                "unit": "trader_long_range_cruiser",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [5, 10]
+                            },
+                            {
+                                "unit": "trader_robotics_cruiser",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [3, 5]
+                            }]
+                        }
+                    }
+                ]
+            },
+            {
+                "is_unique_wave": true,
+                "minimum_wave_count": 20,
+                "wave_spawn_units": [
+                    {
+                        "player_index": 2,
+                        "gravity_well_id": 18,
+                        "minor_target_vector_ordered":
+                        [
+                            15, 14, 16, 13
+                        ],
+                        "spawn_units": {
+                            "required_units": [
+                            {
+                                "unit": "trader_rebel_titan",
+                                "count": [1, 1],
+                                "options": {
+                                    "level": 4,
+                                    "is_temporary_ruler_ship": false,
+                                    "items": [
+                                        "trader_rebel_titan_unlock_rail_gun_weapon",
+                                        "trader_rebel_titan_unlock_missile_weapon",
+                                        "trader_rebel_titan_hull_plating_0",
+                                        "trader_missile_guidance_computer",
+                                        "trader_heavy_gauss_slugs",
+                                        "trader_flak_burst"
+                                    ]
+                                }
+                            },
+                            {
+                                "unit": "trader_siege_capital_ship",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [1, 2],
+                                "options": {
+                                    "level": 5,
+                                    "is_temporary_ruler_ship": false,
+                                    "items": [
+                                        "trader_flak_burst",
+                                        "trader_heavy_gauss_slugs",
+                                        "trader_rapid_autoloader",
+                                        "trader_missile_guidance_computer"
+                                    ]
+                                }
+                            },
+                            {
+                                "unit": "trader_support_capital_ship",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [1, 2],
+                                "options": {
+                                    "level": 5,
+                                    "is_temporary_ruler_ship": false,
+                                    "items": [
+                                        "trader_flak_burst",
+                                        "trader_antimatter_engine",
+                                        "trader_reserve_squadron_hangar",
+                                        "trader_targeting_array"
+                                    ]
+                                }
+                            },
+                            {
+                                "unit": "trader_antifighter_frigate",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [5, 10]
+                            },
+                            {
+                                "unit": "trader_long_range_cruiser",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [5, 10]
+                            },
+                            {
+                                "unit": "trader_robotics_cruiser",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [3, 5]
+                            }]
+                        }
+                    }
+                ]
+            },
+            {
+                "minimum_wave_count": 40,
+                "wave_spawn_units": [
+                    {
+                        "player_index": 2,
+                        "gravity_well_id": 18,
+                        "minor_target_vector_ordered":
+                        [
+                            15, 14, 16, 13
+                        ],
+                        "spawn_units": {
+                            "required_units": [
+                            {
+                                "unit": "trader_rebel_titan",
+                                "count": [1, 1],
+                                "options": {
+                                    "level": 7,
+                                    "is_temporary_ruler_ship": false,
+                                    "items": [
+                                        "trader_rebel_titan_unlock_rail_gun_weapon",
+                                        "trader_rebel_titan_unlock_missile_weapon",
+                                        "trader_rebel_titan_hull_plating_0",
+                                        "trader_rebel_titan_hull_plating_1",
+                                        "trader_missile_guidance_computer",
+                                        "trader_heavy_gauss_slugs",
+                                        "trader_rapid_autoloader",
+                                        "trader_targeting_array"
+                                    ]
+                                }
+                            },
+                            {
+                                "unit": "trader_siege_capital_ship",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [2, 3],
+                                "options": {
+                                    "level": 9,
+                                    "is_temporary_ruler_ship": false,
+                                    "items": [
+                                        "trader_flak_burst",
+                                        "trader_heavy_gauss_slugs",
+                                        "trader_rapid_autoloader",
+                                        "trader_missile_guidance_computer"
+                                    ]
+                                }
+                            },
+                            {
+                                "unit": "trader_support_capital_ship",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [2, 3],
+                                "options": {
+                                    "level": 9,
+                                    "is_temporary_ruler_ship": false,
+                                    "items": [
+                                        "trader_flak_burst",
+                                        "trader_antimatter_engine",
+                                        "trader_reserve_squadron_hangar",
+                                        "trader_targeting_array"
+                                    ]
+                                }
+                            },
+                            {
+                                "unit": "trader_antifighter_frigate",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [10, 15]
+                            },
+                            {
+                                "unit": "trader_long_range_cruiser",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [10, 15]
+                            },
+                            {
+                                "unit": "trader_robotics_cruiser",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [5, 10]
+                            }]
+                        }
+                    }
+                ]
+            },
+            {
+                "is_unique_wave": true,
+                "minimum_wave_count": 13,
+                "wave_spawn_units": [
+                    {
+                        "player_index": 3,
+                        "gravity_well_id": 26,
+                        "minor_target_vector_ordered":
+                        [
+                            59, 20, 62, 19
+                        ],
+                        "spawn_units": {
+                            "required_units": [
+                            {
+                                "unit": "advent_loyalist_titan",
+                                "count": [1, 1],
+                                "options": {
+                                    "level": 3,
+                                    "is_temporary_ruler_ship": false,
+                                    "items": [
+                                        "advent_loyalist_titan_shield_booster",
+                                        "advent_plasma_booster",
+                                        "advent_psionic_adepts",
+                                        "advent_shield_boost"
+                                    ]
+                                }
+                            },
+                            {
+                                "unit": "advent_planet_psionic_capital_ship",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [1, 1],
+                                "options": {
+                                    "level": 5,
+                                    "is_temporary_ruler_ship": false,
+                                    "items": [
+                                        "advent_harmony_circuit",
+                                        "advent_shield_boost",
+                                        "advent_plasma_booster",
+                                        "advent_energy_booster"
+                                    ]
+                                }
+                            },
+                            {
+                                "unit": "advent_colony_capital_ship",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [1, 1],
+                                "options": {
+                                    "level": 5,
+                                    "is_temporary_ruler_ship": false,
+                                    "items": [
+                                        "advent_harmony_circuit",
+                                        "advent_shield_boost",
+                                        "advent_plasma_booster",
+                                        "advent_energy_booster"
+                                    ]
+                                }
+                            },
+                            {
+                                "unit": "advent_light_frigate",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [10, 15]
+                            },
+                            {
+                                "unit": "advent_defense_cruiser",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [5, 10]
+                            },
+                            {
+                                "unit": "advent_heavy_cruiser",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [3, 5]
+                            },
+                            {
+                                "unit": "advent_guardian_cruiser",
+                                "wave_strength_log_scalar": 1.0,
+                                "count": [3, 5]
+                            }]
+                        }
+                    }
+                ]
+            },
+            {
+                "is_unique_wave": true,
+                "minimum_wave_count": 23,
+                "wave_spawn_units": [
+                    {
+                        "player_index": 3,
+                        "gravity_well_id": 26,
+                        "minor_target_vector_ordered":
+                        [
+                            59, 20, 62, 19
+                        ],
+                        "spawn_units": {
+                            "required_units": [
+                            {
+                                "unit": "advent_loyalist_titan",
+                                "count": [1, 1],
+                                "options": {
+                                    "level": 6,
+                                    "is_temporary_ruler_ship": false,
+                                    "items": [
+                                        "advent_loyalist_titan_shield_booster",
+                                        "advent_loyalist_titan_hull_plating",
+                                        "advent_psionic_dynamo",
+                                        "advent_psionic_adepts",
+                                        "advent_shield_boost"
+                                    ]
+                                }
+                            },
+                            {
+                                "unit": "advent_planet_psionic_capital_ship",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [1, 2],
+                                "options": {
+                                    "level": 7,
+                                    "is_temporary_ruler_ship": false,
+                                    "items": [
+                                        "advent_harmony_circuit",
+                                        "advent_shield_boost",
+                                        "advent_plasma_booster",
+                                        "advent_energy_booster"
+                                    ]
+                                }
+                            },
+                            {
+                                "unit": "advent_colony_capital_ship",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [1, 2],
+                                "options": {
+                                    "level": 7,
+                                    "is_temporary_ruler_ship": false,
+                                    "items": [
+                                        "advent_harmony_circuit",
+                                        "advent_shield_boost",
+                                        "advent_plasma_booster",
+                                        "advent_energy_booster"
+                                    ]
+                                }
+                            },
+                            {
+                                "unit": "advent_light_frigate",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [10, 15]
+                            },
+                            {
+                                "unit": "advent_defense_cruiser",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [5, 10]
+                            },
+                            {
+                                "unit": "advent_heavy_cruiser",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [3, 5]
+                            },
+                            {
+                                "unit": "advent_guardian_cruiser",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [3, 5]
+                            }]
+                        }
+                    }
+                ]
+            },
+            {
+                "minimum_wave_count": 41,
+                "wave_spawn_units": [
+                    {
+                        "player_index": 3,
+                        "gravity_well_id": 26,
+                        "minor_target_vector_ordered":
+                        [
+                            59, 20, 62, 19
+                        ],
+                        "spawn_units": {
+                            "required_units": [
+                            {
+                                "unit": "advent_loyalist_titan",
+                                "count": [1, 1],
+                                "options": {
+                                    "level": 9,
+                                    "is_temporary_ruler_ship": false,
+                                    "items": [
+                                        "advent_loyalist_titan_shield_booster",
+                                        "advent_loyalist_titan_hull_plating",
+                                        "advent_psionic_dynamo",
+                                        "advent_harmony_circuit",
+                                        "advent_focus_antimatter",
+                                        "advent_focus_armor",
+                                        "advent_shield_boost",
+                                        "advent_plasma_booster"
+                                    ]
+                                }
+                            },
+                            {
+                                "unit": "advent_planet_psionic_capital_ship",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [2, 3],
+                                "options": {
+                                    "level": 9,
+                                    "is_temporary_ruler_ship": false,
+                                    "items": [
+                                        "advent_harmony_circuit",
+                                        "advent_shield_boost",
+                                        "advent_plasma_booster",
+                                        "advent_energy_booster"
+                                    ]
+                                }
+                            },
+                            {
+                                "unit": "advent_colony_capital_ship",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [2, 3],
+                                "options": {
+                                    "level": 9,
+                                    "is_temporary_ruler_ship": false,
+                                    "items": [
+                                        "advent_harmony_circuit",
+                                        "advent_shield_boost",
+                                        "advent_plasma_booster",
+                                        "advent_energy_booster"
+                                    ]
+                                }
+                            },
+                            {
+                                "unit": "advent_light_frigate",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [15, 20]
+                            },
+                            {
+                                "unit": "advent_defense_cruiser",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [10, 15]
+                            },
+                            {
+                                "unit": "advent_heavy_cruiser",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [10, 15]
+                            },
+                            {
+                                "unit": "advent_guardian_cruiser",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [5, 10]
+                            }]
+                        }
+                    }
+                ]
+            },
+            {
+                "minimum_wave_count": 50,
+                "wave_spawn_units": [
+                    {
+                        "player_index": 1,
+                        "gravity_well_id": 12,
+                        "minor_target_vector_ordered":
+                        [
+                            10, 8, 7
+                        ],
+                        "spawn_units": {
+                            "required_units": [
+                            {
+                                "unit": "dlc_vasari_mad_titan",
+                                "count": [1, 1],
+                                "options": {
+                                    "level": 9,
+                                    "is_temporary_ruler_ship": false,
+                                    "items": [
+                                        "vasari_loyalist_titan_hull_plating_0",
+                                        "vasari_loyalist_titan_hull_plating_1",
+                                        "vasari_loyalist_titan_hull_plating_2",
+                                        "vasari_self_repairing_armor",
+                                        "vasari_loyalist_titan_unlock_phase_cannon_weapon",
+                                        "vasari_loyalist_titan_unlock_wave_weapon",
+                                        "vasari_loyalist_titan_improve_micro_phase_jump",
+                                        "vasari_loyalist_titan_improve_the_maw"
+                                    ]
+                                }
+                            },
+                            {
+                                "unit": "vasari_siege_capital_ship",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [2, 3],
+                                "options": {
+                                    "level": 9,
+                                    "is_temporary_ruler_ship": false,
+                                    "items": [
+                                        "vasari_self_repairing_armor",
+                                        "vasari_phase_missile_boost",
+                                        "vasari_beam_boost",
+                                        "vasari_antimatter_recharger"
+                                    ]
+                                }
+                            },
+                            {
+                                "unit": "vasari_carrier_capital_ship",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [2, 3],
+                                "options": {
+                                    "level": 9,
+                                    "is_temporary_ruler_ship": false,
+                                    "items": [
+                                        "vasari_self_repairing_armor",
+                                        "vasari_phase_shield",
+                                        "vasari_strikecraft_armor",
+                                        "vasari_antimatter_recharger"
+                                    ]
+                                }
+                            },
+                            {
+                                "unit": "vasari_anticorvette_corvette",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [12, 15]
+                            },
+                            {
+                                "unit": "vasari_antiarmor_cruiser",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [9, 12]
+                            },
+                            {
+                                "unit": "vasari_overseer_cruiser",
+                                "wave_strength_log_scalar": 2.0,
+                                "count": [1, 3]
+                            }]
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    "starting_units_to_any_player_and_gravity_well":
+    [
+        {
+            "faction_allowed": "dlc_trader_loyalist",
+            "faction_spawn_units": [
+            {
+                "player_index": 0,
+                "gravity_well_id": 2,
+                "spawn_units": {
+                    "required_units":[
+                    {
+                        "unit": "trader_civilian_research_lab_structure",
+                        "count": [2, 2]
+                    },
+                    {
+                        "unit": "trader_culture_center_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_frigate_factory_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_gauss_defense_structure",
+                        "count": [8, 8]
+                    },
+                    {
+                        "unit": "trader_hangar_defense_structure",
+                        "count": [4, 4]
+                    },
+                    {
+                        "unit": "trader_military_research_lab_structure",
+                        "count": [2, 2]
+                    },
+                    {
+                        "unit": "trader_exotic_factory_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_starbase",
+                        "count": [1, 1],
+                        "options": {
+                            "items": [
+                                "trader_starbase_structural_integrity_0",
+                                "trader_starbase_unlock_beam_weapon",
+                                "trader_starbase_planetary_shield_array",
+                                "trader_starbase_hangar_0"
+                            ]
+                        }
+                    },
+                    {
+                        "unit": "trader_retrofit_bay_structure",
+                        "count": [1, 1]
+                    }]
+                },
+                "spawn_units_in_formation": [
+                {
+                    "required_units": [
+                    {
+                        "unit": "trader_battle_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_heavy_cruiser",
+                        "count": [10, 10]
+                    },
+                    {
+                        "unit": "trader_carrier_cruiser",
+                        "count": [6, 6]
+                    },
+                    {
+                        "unit": "trader_light_frigate",
+                        "count": [10, 10]
+                    }]
+                },
+                {
+                    "required_units": [
+                    {
+                        "unit": "trader_autocannon_defense_structure",
+                        "count": [2, 2]
+                    }]
+                },
+                {
+                    "required_units": [
+                    {
+                        "unit": "trader_autocannon_defense_structure",
+                        "count": [2, 2]
+                    }]
+                },
+                {
+                    "required_units": [
+                    {
+                        "unit": "trader_autocannon_defense_structure",
+                        "count": [2, 2]
+                    }]
+                }]
+            }]
+        },
+        {
+            "faction_allowed": "dlc_trader_loyalist",
+            "faction_spawn_units": [
+            {
+                "player_index": 0,
+                "gravity_well_id": 10,
+                "spawn_units": {
+                    "required_units":[
+                    {
+                        "unit": "trader_civilian_research_lab_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_hangar_defense_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_military_research_lab_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_retrofit_bay_structure",
+                        "count": [1, 1]
+                    }]
+                },
+                "spawn_units_in_formation": [
+                {
+                    "required_units": [
+                    {
+                        "unit": "trader_carrier_capital_ship",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_heavy_cruiser",
+                        "count": [5, 5]
+                    },
+                    {
+                        "unit": "trader_robotics_cruiser",
+                        "count": [2, 2]
+                    },
+                    {
+                        "unit": "trader_light_frigate",
+                        "count": [10, 10]
+                    }]
+                },
+                {
+                    "required_units": [
+                    {
+                        "unit": "trader_autocannon_defense_structure",
+                        "count": [2, 2]
+                    }]
+                }]
+            }]
+        },
+        {
+            "faction_allowed": "dlc_trader_loyalist",
+            "faction_spawn_units": [
+            {
+                "player_index": 0,
+                "gravity_well_id": 14,
+                "spawn_units": {
+                    "required_units":[
+                    {
+                        "unit": "trader_civilian_research_lab_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_hangar_defense_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_military_research_lab_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_retrofit_bay_structure",
+                        "count": [1, 1]
+                    }]
+                },
+                "spawn_units_in_formation": [
+                {
+                    "required_units": [
+                    {
+                        "unit": "trader_autocannon_defense_structure",
+                        "count": [2, 2]
+                    }]
+                }]
+            }]
+        },
+        {
+            "faction_allowed": "dlc_trader_loyalist",
+            "faction_spawn_units": [
+            {
+                "player_index": 0,
+                "gravity_well_id": 15,
+                "spawn_units": {
+                    "required_units":[
+                    {
+                        "unit": "trader_civilian_research_lab_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_hangar_defense_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_military_research_lab_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_retrofit_bay_structure",
+                        "count": [1, 1]
+                    }]
+                },
+                "spawn_units_in_formation": [
+                {
+                    "required_units": [
+                    {
+                        "unit": "trader_autocannon_defense_structure",
+                        "count": [2, 2]
+                    }]
+                }]
+            }]
+        },
+        {
+            "faction_allowed": "dlc_trader_loyalist",
+            "faction_spawn_units": [
+            {
+                "player_index": 0,
+                "gravity_well_id": 20,
+                "spawn_units": {
+                    "required_units":[
+                    {
+                        "unit": "trader_civilian_research_lab_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_hangar_defense_structure",
+                        "count": [3, 3]
+                    },
+                    {
+                        "unit": "trader_military_research_lab_structure",
+                        "count": [1, 1]
+                    }]
+                }
+            }]
+        },
+        {
+            "faction_allowed": "dlc_trader_loyalist",
+            "faction_spawn_units": [
+            {
+                "player_index": 0,
+                "gravity_well_id": 59,
+                "spawn_units": {
+                    "required_units":[
+                    {
+                        "unit": "trader_civilian_research_lab_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_military_research_lab_structure",
+                        "count": [1, 1]
+                    }]
+                }
+            }]
+        },
+        {
+            "faction_allowed": "dlc_trader_loyalist",
+            "faction_spawn_units": [
+            {
+                "player_index": 0,
+                "gravity_well_id": 7,
+                "spawn_units": {
+                    "required_units":[
+                    {
+                        "unit": "trader_starbase",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_civilian_research_lab_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_military_research_lab_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_phase_jump_inhibitor_structure",
+                        "count": [1, 1]
+                    }]
+                }
+            }]
+        },
+        {
+            "faction_allowed": "dlc_trader_loyalist",
+            "faction_spawn_units": [
+            {
+                "player_index": 0,
+                "gravity_well_id": 19,
+                "spawn_units": {
+                    "required_units":[
+                    {
+                        "unit": "trader_starbase",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_civilian_research_lab_structure",
+                        "count": [2, 2]
+                    },
+                    {
+                        "unit": "trader_military_research_lab_structure",
+                        "count": [2, 2]
+                    },
+                    {
+                        "unit": "trader_phase_jump_inhibitor_structure",
+                        "count": [1, 1]
+                    }]
+                }
+            }]
+        },
+        {
+            "faction_allowed": "dlc_trader_loyalist",
+            "faction_spawn_units": [
+            {
+                "player_index": 0,
+                "gravity_well_id": 13,
+                "spawn_units": {
+                    "required_units":[
+                    {
+                        "unit": "trader_starbase",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_civilian_research_lab_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_military_research_lab_structure",
+                        "count": [1, 1]
+                    },
+                    {
+                        "unit": "trader_phase_jump_inhibitor_structure",
+                        "count": [1, 1]
+                    }]
+                }
+            }]
+        }
+    ],
+    "starting_research":
+    [
+        {
+            "faction_allowed":"dlc_trader_loyalist",
+            "player_definitions":
+            [
+                {
+                    "player_index":0,
+                    "domains_definitions":
+                    [
+                        {
+                            "domain":"civilian",
+                            "unlocked_tier": 3,
+                            "unlock_all_research_through_tier": 1
+                        },
+                        {
+                            "domain":"military",
+                            "unlocked_tier": 3,
+                            "unlock_all_research_through_tier": 1
+                        }
+                    ],
+                    "other_unlocked_research":[
+                        "trader_unlock_phase_lane_detector",
+                        "trader_unlock_starbase",
+                        "trader_max_supply_1",
+                        "trader_max_supply_2",
+                        "trader_unlock_starbase_unit_factory_unit_item",
+                        "trader_unlock_starbase_docking_booms_unit_item",
+                        "trader_unlock_starbase_unlock_beam_weapon_unit_item",
+                        "trader_unlock_starbase_unlock_torpedo_weapon_unit_item",
+                        "trader_unlock_resource_extractor_structures",
+                        "trader_unlock_exotic_factory_structure",
+                        "trader_unlock_culture_center",
+                        "trader_unlock_gas_giant_biosphere",
+                        "trader_unlock_crystalline_biosphere"
+                    ]
+                }
+            ]
+        }
+    ],
+    "planets":
+    [
+        {
+            "gravity_well_id": 6,
+            "starting_track_levels":
+            {
+                "mining": 4
+            }
+        },
+        {
+            "gravity_well_id": 7,
+            "starting_track_levels":
+            {
+                "logistics": 1,
+                "defense": 2,
+                "commerce": 1,
+                "mining": 2
+            }
+        },
+        {
+            "gravity_well_id": 8,
+            "starting_track_levels":
+            {
+                "defense": 1,
+                "commerce": 1,
+                "mining": 1
+            }
+        },
+        {
+            "gravity_well_id": 9,
+            "starting_track_levels":
+            {
+                "defense": 1,
+                "mining": 2
+            }
+        },
+        {
+            "gravity_well_id": 10,
+            "starting_track_levels":
+            {
+                "logistics": 1,
+                "defense": 1,
+                "mining": 1
+            }
+        },
+        {
+            "gravity_well_id": 13,
+            "starting_track_levels":
+            {
+                "logistics": 1,
+                "defense": 1,
+                "commerce": 2,
+                "mining": 1
+            }
+        },
+        {
+            "gravity_well_id": 14,
+            "starting_track_levels":
+            {
+                "logistics": 1,
+                "defense": 1,
+                "mining": 1
+            }
+        },
+        {
+            "gravity_well_id": 15,
+            "starting_track_levels":
+            {
+                "logistics": 1,
+                "defense": 1,
+                "mining": 1
+            }
+        },
+        {
+            "gravity_well_id": 16,
+            "starting_track_levels":
+            {
+                "defense": 1,
+                "commerce": 1,
+                "mining": 1
+            }
+        },
+        {
+            "gravity_well_id": 19,
+            "starting_track_levels":
+            {
+                "logistics": 2,
+                "defense": 1,
+                "commerce": 1,
+                "mining": 1
+            }
+        },
+        {
+            "gravity_well_id": 20,
+            "starting_track_levels":
+            {
+                "logistics": 3,
+                "defense": 2
+            }
+        },
+        {
+            "gravity_well_id": 59,
+            "starting_track_levels":
+            {
+                "logistics": 1
+            }
+        },
+        {
+            "gravity_well_id": 60,
+            "starting_track_levels":
+            {
+                "defense": 1,
+                "mining": 1
+            }
+        },
+        {
+            "gravity_well_id": 62,
+            "starting_track_levels":
+            {
+                "defense": 1,
+                "mining": 2
+            }
+        }
+    ],
+    "victory_type_gui":
+    {
+        "won_pictures": [
+            "defend_the_homeworld_victory_picture"
+        ],
+        "lost_pictures": [
+            "defend_the_homeworld_defeat_picture"
+        ],
+        "won_texts": [
+        {
+            "status": "player_victory.status.unique_scenario.defend_the_homeworld.won",
+            "phrase": "player_victory.phrase.unique_scenario.defend_the_homeworld.won"
+        }],
+        "lost_texts": [
+        {
+            "status": "player_victory.status.unique_scenario.defend_the_homeworld.lost",
+            "phrase": "player_victory.phrase.unique_scenario.defend_the_homeworld.lost"
+        }]
+    }
+}

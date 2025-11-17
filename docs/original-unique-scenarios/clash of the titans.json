@@ -1,0 +1,1829 @@
+{
+    "start_window_description": "scenario.clashofthetitans.start_window_description",
+    "start_window_movie_brush": "map_art_clash_of_the_titans",
+    "start_window_movie": "scenario_clash_of_the_titans",
+    "objective_description": "scenario.clashofthetitans.objective_description",
+    "remove_free_units": true,
+    "player_home_planet":
+    [
+        {
+            "faction_allowed": "trader_loyalist",
+            "starting_is_colonized": false,
+            "starting_militia_supply": 0
+        },
+        {
+            "faction_allowed": "trader_rebel",
+            "starting_is_colonized": false,
+            "starting_militia_supply": 0
+        },
+        {
+            "faction_allowed": "vasari_loyalist",
+            "starting_is_colonized": false,
+            "starting_militia_supply": 0
+        },
+        {
+            "faction_allowed": "vasari_rebel",
+            "starting_is_colonized": false,
+            "starting_militia_supply": 0
+        },
+        {
+            "faction_allowed": "advent_loyalist",
+            "starting_is_colonized": false,
+            "starting_militia_supply": 0
+        },
+        {
+            "faction_allowed": "advent_rebel",
+            "starting_is_colonized": false,
+            "starting_militia_supply": 0
+        }
+    ],
+    "required_players":
+    [
+        {
+            "player_index":0,
+            "human":true,
+            "ai":false
+        },
+        {
+            "player_index":1,
+            "human":false,
+            "ai":true
+        },
+        {
+            "player_index":2,
+            "human":false,
+            "ai":true
+        },
+        {
+            "player_index":3,
+            "human":false,
+            "ai":true
+        },
+        {
+            "player_index":4,
+            "human":false,
+            "ai":true
+        },
+        {
+            "player_index":5,
+            "human":false,
+            "ai":true
+        }
+    ],
+    "ai_params":
+    [
+        {
+            "player_index": 1,
+            "min_difficulty": "easy",
+            "default_difficulty": "medium"
+        },
+        {
+            "player_index": 2,
+            "min_difficulty": "easy",
+            "default_difficulty": "medium"
+        },
+        {
+            "player_index": 3,
+            "min_difficulty": "easy",
+            "default_difficulty": "medium"
+        },
+        {
+            "player_index": 4,
+            "min_difficulty": "easy",
+            "default_difficulty": "medium"
+        },
+        {
+            "player_index": 5,
+            "min_difficulty": "easy",
+            "default_difficulty": "medium"
+        }
+    ],
+    "starting_research": [
+        {
+            "faction_allowed":"advent_loyalist",
+            "player_definitions": [
+            {
+            "domains_definitions":
+            [
+                {
+                    "domain":"military",
+                    "unlocked_tier": 1,
+                    "unlock_all_research_through_tier": 0
+                }
+            ],
+            "other_unlocked_research":[
+                "advent_max_supply_0"
+            ]}]
+        },
+        {
+            "faction_allowed":"advent_rebel",
+            "player_definitions": [
+            {
+            "domains_definitions":
+            [
+                {
+                    "domain":"military",
+                    "unlocked_tier": 1,
+                    "unlock_all_research_through_tier": 0
+                }
+            ],
+            "other_unlocked_research":[
+                "advent_max_supply_0"
+            ]}]
+        },
+        {
+            "faction_allowed":"trader_loyalist",
+            "player_definitions": [
+            {
+            "domains_definitions":
+            [
+                {
+                    "domain":"military",
+                    "unlocked_tier": 1,
+                    "unlock_all_research_through_tier": 0
+                }
+            ],
+            "other_unlocked_research":[
+                "trader_max_supply_0"
+            ]}]
+        },
+        {
+            "faction_allowed":"trader_rebel",
+            "player_definitions": [
+            {
+            "domains_definitions":
+            [
+                {
+                    "domain":"military",
+                    "unlocked_tier": 1,
+                    "unlock_all_research_through_tier": 0
+                }
+            ],
+            "other_unlocked_research":[
+                "trader_max_supply_0"
+            ]}]
+        },
+        {
+            "faction_allowed":"vasari_loyalist",
+            "player_definitions": [
+            {
+            "domains_definitions":
+            [
+                {
+                    "domain":"military",
+                    "unlocked_tier": 1,
+                    "unlock_all_research_through_tier": 0
+                }
+            ],
+            "other_unlocked_research":[
+                "vasari_max_supply_0"
+            ]}]
+        },
+        {
+            "faction_allowed":"vasari_rebel",
+            "player_definitions": [
+            {
+            "domains_definitions":
+            [
+                {
+                    "domain":"military",
+                    "unlocked_tier": 1,
+                    "unlock_all_research_through_tier": 0
+                }
+            ],
+            "other_unlocked_research":[
+                "vasari_max_supply_0"
+            ]}]
+        }
+    ],
+    "unit_limits":
+    [
+        {
+            "player_index": 0,
+            "player_faction":"trader_loyalist",
+            "unit_limits":
+            [
+                {
+                    "unit":"trader_loyalist_titan",
+                    "max": 3
+                }
+            ]
+        },
+        {
+            "player_index": 0,
+            "player_faction":"trader_rebel",
+            "unit_limits":
+            [
+                {
+                    "unit":"trader_rebel_titan",
+                    "max": 3
+                }
+            ]
+        },
+        {
+            "player_index": 0,
+            "player_faction":"vasari_loyalist",
+            "unit_limits":
+            [
+                {
+                    "unit":"vasari_loyalist_titan",
+                    "max": 3
+                }
+            ]
+        },
+        {
+            "player_index": 0,
+            "player_faction":"vasari_rebel",
+            "unit_limits":
+            [
+                {
+                    "unit":"vasari_rebel_titan",
+                    "max": 3
+                }
+            ]
+        },
+        {
+            "player_index": 0,
+            "player_faction":"advent_loyalist",
+            "unit_limits":
+            [
+                {
+                    "unit":"advent_loyalist_titan",
+                    "max": 3
+                }
+            ]
+        },
+        {
+            "player_index": 0,
+            "player_faction":"advent_rebel",
+            "unit_limits":
+            [
+                {
+                    "unit":"advent_rebel_titan",
+                    "max": 3
+                }
+            ]
+        },
+        {
+            "player_index": 1,
+            "player_faction":"trader_loyalist",
+            "unit_limits":
+            [
+                {
+                    "unit":"trader_loyalist_titan",
+                    "max": 3
+                }
+            ]
+        },
+        {
+            "player_index": 1,
+            "player_faction":"trader_rebel",
+            "unit_limits":
+            [
+                {
+                    "unit":"trader_rebel_titan",
+                    "max": 3
+                }
+            ]
+        },
+        {
+            "player_index": 1,
+            "player_faction":"vasari_loyalist",
+            "unit_limits":
+            [
+                {
+                    "unit":"vasari_loyalist_titan",
+                    "max": 3
+                }
+            ]
+        },
+        {
+            "player_index": 1,
+            "player_faction":"vasari_rebel",
+            "unit_limits":
+            [
+                {
+                    "unit":"vasari_rebel_titan",
+                    "max": 3
+                }
+            ]
+        },
+        {
+            "player_index": 1,
+            "player_faction":"advent_loyalist",
+            "unit_limits":
+            [
+                {
+                    "unit":"advent_loyalist_titan",
+                    "max": 3
+                }
+            ]
+        },
+        {
+            "player_index": 1,
+            "player_faction":"advent_rebel",
+            "unit_limits":
+            [
+                {
+                    "unit":"advent_rebel_titan",
+                    "max": 3
+                }
+            ]
+        },
+        {
+            "player_index": 2,
+            "player_faction":"trader_loyalist",
+            "unit_limits":
+            [
+                {
+                    "unit":"trader_loyalist_titan",
+                    "max": 3
+                }
+            ]
+        },
+        {
+            "player_index": 2,
+            "player_faction":"trader_rebel",
+            "unit_limits":
+            [
+                {
+                    "unit":"trader_rebel_titan",
+                    "max": 3
+                }
+            ]
+        },
+        {
+            "player_index": 2,
+            "player_faction":"vasari_loyalist",
+            "unit_limits":
+            [
+                {
+                    "unit":"vasari_loyalist_titan",
+                    "max": 3
+                }
+            ]
+        },
+        {
+            "player_index": 2,
+            "player_faction":"vasari_rebel",
+            "unit_limits":
+            [
+                {
+                    "unit":"vasari_rebel_titan",
+                    "max": 3
+                }
+            ]
+        },
+        {
+            "player_index": 2,
+            "player_faction":"advent_loyalist",
+            "unit_limits":
+            [
+                {
+                    "unit":"advent_loyalist_titan",
+                    "max": 3
+                }
+            ]
+        },
+        {
+            "player_index": 2,
+            "player_faction":"advent_rebel",
+            "unit_limits":
+            [
+                {
+                    "unit":"advent_rebel_titan",
+                    "max": 3
+                }
+            ]
+        },
+        {
+            "player_index": 3,
+            "player_faction":"trader_loyalist",
+            "unit_limits":
+            [
+                {
+                    "unit":"trader_loyalist_titan",
+                    "max": 3
+                }
+            ]
+        },
+        {
+            "player_index": 3,
+            "player_faction":"trader_rebel",
+            "unit_limits":
+            [
+                {
+                    "unit":"trader_rebel_titan",
+                    "max": 3
+                }
+            ]
+        },
+        {
+            "player_index": 3,
+            "player_faction":"vasari_loyalist",
+            "unit_limits":
+            [
+                {
+                    "unit":"vasari_loyalist_titan",
+                    "max": 3
+                }
+            ]
+        },
+        {
+            "player_index": 3,
+            "player_faction":"vasari_rebel",
+            "unit_limits":
+            [
+                {
+                    "unit":"vasari_rebel_titan",
+                    "max": 3
+                }
+            ]
+        },
+        {
+            "player_index": 3,
+            "player_faction":"advent_loyalist",
+            "unit_limits":
+            [
+                {
+                    "unit":"advent_loyalist_titan",
+                    "max": 3
+                }
+            ]
+        },
+        {
+            "player_index": 3,
+            "player_faction":"advent_rebel",
+            "unit_limits":
+            [
+                {
+                    "unit":"advent_rebel_titan",
+                    "max": 3
+                }
+            ]
+        },
+        {
+            "player_index": 4,
+            "player_faction":"trader_loyalist",
+            "unit_limits":
+            [
+                {
+                    "unit":"trader_loyalist_titan",
+                    "max": 3
+                }
+            ]
+        },
+        {
+            "player_index": 4,
+            "player_faction":"trader_rebel",
+            "unit_limits":
+            [
+                {
+                    "unit":"trader_rebel_titan",
+                    "max": 3
+                }
+            ]
+        },
+        {
+            "player_index": 4,
+            "player_faction":"vasari_loyalist",
+            "unit_limits":
+            [
+                {
+                    "unit":"vasari_loyalist_titan",
+                    "max": 3
+                }
+            ]
+        },
+        {
+            "player_index": 4,
+            "player_faction":"vasari_rebel",
+            "unit_limits":
+            [
+                {
+                    "unit":"vasari_rebel_titan",
+                    "max": 3
+                }
+            ]
+        },
+        {
+            "player_index": 4,
+            "player_faction":"advent_loyalist",
+            "unit_limits":
+            [
+                {
+                    "unit":"advent_loyalist_titan",
+                    "max": 3
+                }
+            ]
+        },
+        {
+            "player_index": 4,
+            "player_faction":"advent_rebel",
+            "unit_limits":
+            [
+                {
+                    "unit":"advent_rebel_titan",
+                    "max": 3
+                }
+            ]
+        },
+        {
+            "player_index": 5,
+            "player_faction":"trader_loyalist",
+            "unit_limits":
+            [
+                {
+                    "unit":"trader_loyalist_titan",
+                    "max": 3
+                }
+            ]
+        },
+        {
+            "player_index": 5,
+            "player_faction":"trader_rebel",
+            "unit_limits":
+            [
+                {
+                    "unit":"trader_rebel_titan",
+                    "max": 3
+                }
+            ]
+        },
+        {
+            "player_index": 5,
+            "player_faction":"vasari_loyalist",
+            "unit_limits":
+            [
+                {
+                    "unit":"vasari_loyalist_titan",
+                    "max": 3
+                }
+            ]
+        },
+        {
+            "player_index": 5,
+            "player_faction":"vasari_rebel",
+            "unit_limits":
+            [
+                {
+                    "unit":"vasari_rebel_titan",
+                    "max": 3
+                }
+            ]
+        },
+        {
+            "player_index": 5,
+            "player_faction":"advent_loyalist",
+            "unit_limits":
+            [
+                {
+                    "unit":"advent_loyalist_titan",
+                    "max": 3
+                }
+            ]
+        },
+        {
+            "player_index": 5,
+            "player_faction":"advent_rebel",
+            "unit_limits":
+            [
+                {
+                    "unit":"advent_rebel_titan",
+                    "max": 3
+                }
+            ]
+        }
+    ],
+    "player_victory_overrides" :
+    [
+        {
+            "player_index":0,
+            "player_faction":"trader_loyalist",
+            "victory_overrides":
+            [
+                "military",
+                "home_planet"
+            ]
+        },
+        {
+            "player_index":0,
+            "player_faction":"trader_rebel",
+            "victory_overrides":
+            [
+                "military",
+                "home_planet"
+            ]
+        }
+    ],
+    "starting_units_to_any_player_and_gravity_well":
+    [
+        {
+            "faction_allowed": "trader_loyalist",
+            "remove_starting_units": true,
+            "faction_spawn_units": [
+            {
+                "player_index": 0,
+                "gravity_well_id": 2,
+                "spawn_units": {},
+                "spawn_units_in_hyperspace": [{
+                    "required_units": [
+                    {
+                        "unit": "trader_loyalist_titan",
+                        "count": [1, 1],
+                        "options": {
+                            "level": 0,
+                            "is_temporary_ruler_ship": false,
+                            "items": [
+                                "trader_mobile_ruler_ship",
+                                "trader_mobile_fleet_beacon"
+                            ]
+                        }
+                    },
+                    {
+                        "unit": "trader_scout_corvette",
+                        "count": [2, 2]
+                    },
+                    {
+                        "unit": "trader_colony_frigate",
+                        "count": [1, 1]
+                    }]
+                }]
+            }]
+        },
+        {
+            "faction_allowed": "trader_rebel",
+            "remove_starting_units": true,
+            "faction_spawn_units": [
+            {
+                "player_index": 0,
+                "gravity_well_id": 2,
+                "spawn_units": {},
+                "spawn_units_in_hyperspace": [{
+                    "required_units": [
+                    {
+                        "unit": "trader_rebel_titan",
+                        "count": [1, 1],
+                        "options": {
+                            "level": 0,
+                            "is_temporary_ruler_ship": false,
+                            "items": [
+                                "trader_mobile_ruler_ship",
+                                "trader_mobile_fleet_beacon"
+                            ]
+                        }
+                    },
+                    {
+                        "unit": "trader_scout_corvette",
+                        "count": [2, 2]
+                    },
+                    {
+                        "unit": "trader_colony_frigate",
+                        "count": [1, 1]
+                    }]
+                }]
+            }]
+        },
+        {
+            "faction_allowed": "vasari_loyalist",
+            "remove_starting_units": true,
+            "faction_spawn_units": [
+            {
+                "player_index": 0,
+                "gravity_well_id": 2,
+                "spawn_units": {},
+                "spawn_units_in_hyperspace": [{
+                    "required_units": [
+                    {
+                        "unit": "vasari_loyalist_titan",
+                        "count": [1, 1],
+                        "options": {
+                            "level": 0,
+                            "is_temporary_ruler_ship": false,
+                            "items": [
+                                "vasari_mobile_ruler_ship",
+                                "vasari_mobile_fleet_beacon"
+                            ]
+                        }
+                    },
+                    {
+                        "unit": "vasari_scout_corvette",
+                        "count": [2, 2]
+                    },
+                    {
+                        "unit": "vasari_colony_cruiser",
+                        "count": [1, 1]
+                    }]
+                }]
+            }]
+        },
+        {
+            "faction_allowed": "vasari_rebel",
+            "remove_starting_units": true,
+            "faction_spawn_units": [
+            {
+                "player_index": 0,
+                "gravity_well_id": 2,
+                "spawn_units": {},
+                "spawn_units_in_hyperspace": [{
+                    "required_units": [
+                    {
+                        "unit": "vasari_rebel_titan",
+                        "count": [1, 1],
+                        "options": {
+                            "level": 0,
+                            "is_temporary_ruler_ship": false,
+                            "items": [
+                                "vasari_mobile_ruler_ship",
+                                "vasari_mobile_fleet_beacon"
+                            ]
+                        }
+                    },
+                    {
+                        "unit": "vasari_scout_corvette",
+                        "count": [2, 2]
+                    },
+                    {
+                        "unit": "vasari_colony_cruiser",
+                        "count": [1, 1]
+                    }]
+                }]
+            }]
+        },
+        {
+            "faction_allowed": "advent_loyalist",
+            "remove_starting_units": true,
+            "faction_spawn_units": [
+            {
+                "player_index": 0,
+                "gravity_well_id": 2,
+                "spawn_units": {},
+                "spawn_units_in_hyperspace": [{
+                    "required_units": [
+                    {
+                        "unit": "advent_loyalist_titan",
+                        "count": [1, 1],
+                        "options": {
+                            "level": 0,
+                            "is_temporary_ruler_ship": false,
+                            "items": [
+                                "advent_mobile_ruler_ship",
+                                "advent_mobile_fleet_beacon"
+                            ]
+                        }
+                    },
+                    {
+                        "unit": "advent_scout_corvette",
+                        "count": [2, 2]
+                    },
+                    {
+                        "unit": "advent_colony_frigate",
+                        "count": [1, 1]
+                    }]
+                }]
+            }]
+        },
+        {
+            "faction_allowed": "advent_rebel",
+            "remove_starting_units": true,
+            "faction_spawn_units": [
+            {
+                "player_index": 0,
+                "gravity_well_id": 2,
+                "spawn_units": {},
+                "spawn_units_in_hyperspace": [{
+                    "required_units": [
+                    {
+                        "unit": "advent_rebel_titan",
+                        "count": [1, 1],
+                        "options": {
+                            "level": 0,
+                            "is_temporary_ruler_ship": false,
+                            "items": [
+                                "advent_mobile_ruler_ship",
+                                "advent_mobile_fleet_beacon"
+                            ]
+                        }
+                    },
+                    {
+                        "unit": "advent_scout_corvette",
+                        "count": [2, 2]
+                    },
+                    {
+                        "unit": "advent_colony_frigate",
+                        "count": [1, 1]
+                    }]
+                }]
+            }]
+        },
+        {
+            "faction_allowed": "trader_loyalist",
+            "remove_starting_units": true,
+            "faction_spawn_units": [
+            {
+                "player_index": 1,
+                "gravity_well_id": 3,
+                "spawn_units": {},
+                "spawn_units_in_hyperspace": [{
+                    "required_units": [
+                    {
+                        "unit": "trader_loyalist_titan",
+                        "count": [1, 1],
+                        "options": {
+                            "level": 0,
+                            "is_temporary_ruler_ship": false,
+                            "items": [
+                                "trader_mobile_ruler_ship",
+                                "trader_mobile_fleet_beacon"
+                            ]
+                        }
+                    },
+                    {
+                        "unit": "trader_scout_corvette",
+                        "count": [2, 2]
+                    },
+                    {
+                        "unit": "trader_colony_frigate",
+                        "count": [1, 1]
+                    }]
+                }]
+            }]
+        },
+        {
+            "faction_allowed": "trader_rebel",
+            "remove_starting_units": true,
+            "faction_spawn_units": [
+            {
+                "player_index": 1,
+                "gravity_well_id": 3,
+                "spawn_units": {},
+                "spawn_units_in_hyperspace": [{
+                    "required_units": [
+                    {
+                        "unit": "trader_rebel_titan",
+                        "count": [1, 1],
+                        "options": {
+                            "level": 0,
+                            "is_temporary_ruler_ship": false,
+                            "items": [
+                                "trader_mobile_ruler_ship",
+                                "trader_mobile_fleet_beacon"
+                            ]
+                        }
+                    },
+                    {
+                        "unit": "trader_scout_corvette",
+                        "count": [2, 2]
+                    },
+                    {
+                        "unit": "trader_colony_frigate",
+                        "count": [1, 1]
+                    }]
+                }]
+            }]
+        },
+        {
+            "faction_allowed": "vasari_loyalist",
+            "remove_starting_units": true,
+            "faction_spawn_units": [
+            {
+                "player_index": 1,
+                "gravity_well_id": 3,
+                "spawn_units": {},
+                "spawn_units_in_hyperspace": [{
+                    "required_units": [
+                    {
+                        "unit": "vasari_loyalist_titan",
+                        "count": [1, 1],
+                        "options": {
+                            "level": 0,
+                            "is_temporary_ruler_ship": false,
+                            "items": [
+                                "vasari_mobile_ruler_ship",
+                                "vasari_mobile_fleet_beacon"
+                            ]
+                        }
+                    },
+                    {
+                        "unit": "vasari_scout_corvette",
+                        "count": [2, 2]
+                    },
+                    {
+                        "unit": "vasari_colony_cruiser",
+                        "count": [1, 1]
+                    }]
+                }]
+            }]
+        },
+        {
+            "faction_allowed": "vasari_rebel",
+            "remove_starting_units": true,
+            "faction_spawn_units": [
+            {
+                "player_index": 1,
+                "gravity_well_id": 3,
+                "spawn_units": {},
+                "spawn_units_in_hyperspace": [{
+                    "required_units": [
+                    {
+                        "unit": "vasari_rebel_titan",
+                        "count": [1, 1],
+                        "options": {
+                            "level": 0,
+                            "is_temporary_ruler_ship": false,
+                            "items": [
+                                "vasari_mobile_ruler_ship",
+                                "vasari_mobile_fleet_beacon"
+                            ]
+                        }
+                    },
+                    {
+                        "unit": "vasari_scout_corvette",
+                        "count": [2, 2]
+                    },
+                    {
+                        "unit": "vasari_colony_cruiser",
+                        "count": [1, 1]
+                    }]
+                }]
+            }]
+        },
+        {
+            "faction_allowed": "advent_loyalist",
+            "remove_starting_units": true,
+            "faction_spawn_units": [
+            {
+                "player_index": 1,
+                "gravity_well_id": 3,
+                "spawn_units": {},
+                "spawn_units_in_hyperspace": [{
+                    "required_units": [
+                    {
+                        "unit": "advent_loyalist_titan",
+                        "count": [1, 1],
+                        "options": {
+                            "level": 0,
+                            "is_temporary_ruler_ship": false,
+                            "items": [
+                                "advent_mobile_ruler_ship",
+                                "advent_mobile_fleet_beacon"
+                            ]
+                        }
+                    },
+                    {
+                        "unit": "advent_scout_corvette",
+                        "count": [2, 2]
+                    },
+                    {
+                        "unit": "advent_colony_frigate",
+                        "count": [1, 1]
+                    }]
+                }]
+            }]
+        },
+        {
+            "faction_allowed": "advent_rebel",
+            "remove_starting_units": true,
+            "faction_spawn_units": [
+            {
+                "player_index": 1,
+                "gravity_well_id": 3,
+                "spawn_units": {},
+                "spawn_units_in_hyperspace": [{
+                    "required_units": [
+                    {
+                        "unit": "advent_rebel_titan",
+                        "count": [1, 1],
+                        "options": {
+                            "level": 0,
+                            "is_temporary_ruler_ship": false,
+                            "items": [
+                                "advent_mobile_ruler_ship",
+                                "advent_mobile_fleet_beacon"
+                            ]
+                        }
+                    },
+                    {
+                        "unit": "advent_scout_corvette",
+                        "count": [2, 2]
+                    },
+                    {
+                        "unit": "advent_colony_frigate",
+                        "count": [1, 1]
+                    }]
+                }]
+            }]
+        },
+        {
+            "faction_allowed": "trader_loyalist",
+            "remove_starting_units": true,
+            "faction_spawn_units": [
+            {
+                "player_index": 2,
+                "gravity_well_id": 4,
+                "spawn_units": {},
+                "spawn_units_in_hyperspace": [{
+                    "required_units": [
+                    {
+                        "unit": "trader_loyalist_titan",
+                        "count": [1, 1],
+                        "options": {
+                            "level": 0,
+                            "is_temporary_ruler_ship": false,
+                            "items": [
+                                "trader_mobile_ruler_ship",
+                                "trader_mobile_fleet_beacon"
+                            ]
+                        }
+                    },
+                    {
+                        "unit": "trader_scout_corvette",
+                        "count": [2, 2]
+                    },
+                    {
+                        "unit": "trader_colony_frigate",
+                        "count": [1, 1]
+                    }]
+                }]
+            }]
+        },
+        {
+            "faction_allowed": "trader_rebel",
+            "remove_starting_units": true,
+            "faction_spawn_units": [
+            {
+                "player_index": 2,
+                "gravity_well_id": 4,
+                "spawn_units": {},
+                "spawn_units_in_hyperspace": [{
+                    "required_units": [
+                    {
+                        "unit": "trader_rebel_titan",
+                        "count": [1, 1],
+                        "options": {
+                            "level": 0,
+                            "is_temporary_ruler_ship": false,
+                            "items": [
+                                "trader_mobile_ruler_ship",
+                                "trader_mobile_fleet_beacon"
+                            ]
+                        }
+                    },
+                    {
+                        "unit": "trader_scout_corvette",
+                        "count": [2, 2]
+                    },
+                    {
+                        "unit": "trader_colony_frigate",
+                        "count": [1, 1]
+                    }]
+                }]
+            }]
+        },
+        {
+            "faction_allowed": "vasari_loyalist",
+            "remove_starting_units": true,
+            "faction_spawn_units": [
+            {
+                "player_index": 2,
+                "gravity_well_id": 4,
+                "spawn_units": {},
+                "spawn_units_in_hyperspace": [{
+                    "required_units": [
+                    {
+                        "unit": "vasari_loyalist_titan",
+                        "count": [1, 1],
+                        "options": {
+                            "level": 0,
+                            "is_temporary_ruler_ship": false,
+                            "items": [
+                                "vasari_mobile_ruler_ship",
+                                "vasari_mobile_fleet_beacon"
+                            ]
+                        }
+                    },
+                    {
+                        "unit": "vasari_scout_corvette",
+                        "count": [2, 2]
+                    },
+                    {
+                        "unit": "vasari_colony_cruiser",
+                        "count": [1, 1]
+                    }]
+                }]
+            }]
+        },
+        {
+            "faction_allowed": "vasari_rebel",
+            "remove_starting_units": true,
+            "faction_spawn_units": [
+            {
+                "player_index": 2,
+                "gravity_well_id": 4,
+                "spawn_units": {},
+                "spawn_units_in_hyperspace": [{
+                    "required_units": [
+                    {
+                        "unit": "vasari_rebel_titan",
+                        "count": [1, 1],
+                        "options": {
+                            "level": 0,
+                            "is_temporary_ruler_ship": false,
+                            "items": [
+                                "vasari_mobile_ruler_ship",
+                                "vasari_mobile_fleet_beacon"
+                            ]
+                        }
+                    },
+                    {
+                        "unit": "vasari_scout_corvette",
+                        "count": [2, 2]
+                    },
+                    {
+                        "unit": "vasari_colony_cruiser",
+                        "count": [1, 1]
+                    }]
+                }]
+            }]
+        },
+        {
+            "faction_allowed": "advent_loyalist",
+            "remove_starting_units": true,
+            "faction_spawn_units": [
+            {
+                "player_index": 2,
+                "gravity_well_id": 4,
+                "spawn_units": {},
+                "spawn_units_in_hyperspace": [{
+                    "required_units": [
+                    {
+                        "unit": "advent_loyalist_titan",
+                        "count": [1, 1],
+                        "options": {
+                            "level": 0,
+                            "is_temporary_ruler_ship": false,
+                            "items": [
+                                "advent_mobile_ruler_ship",
+                                "advent_mobile_fleet_beacon"
+                            ]
+                        }
+                    },
+                    {
+                        "unit": "advent_scout_corvette",
+                        "count": [2, 2]
+                    },
+                    {
+                        "unit": "advent_colony_frigate",
+                        "count": [1, 1]
+                    }]
+                }]
+            }]
+        },
+        {
+            "faction_allowed": "advent_rebel",
+            "remove_starting_units": true,
+            "faction_spawn_units": [
+            {
+                "player_index": 2,
+                "gravity_well_id": 4,
+                "spawn_units": {},
+                "spawn_units_in_hyperspace": [{
+                    "required_units": [
+                    {
+                        "unit": "advent_rebel_titan",
+                        "count": [1, 1],
+                        "options": {
+                            "level": 0,
+                            "is_temporary_ruler_ship": false,
+                            "items": [
+                                "advent_mobile_ruler_ship",
+                                "advent_mobile_fleet_beacon"
+                            ]
+                        }
+                    },
+                    {
+                        "unit": "advent_scout_corvette",
+                        "count": [2, 2]
+                    },
+                    {
+                        "unit": "advent_colony_frigate",
+                        "count": [1, 1]
+                    }]
+                }]
+            }]
+        },
+        {
+            "faction_allowed": "trader_loyalist",
+            "remove_starting_units": true,
+            "faction_spawn_units": [
+            {
+                "player_index": 3,
+                "gravity_well_id": 5,
+                "spawn_units": {},
+                "spawn_units_in_hyperspace": [{
+                    "required_units": [
+                    {
+                        "unit": "trader_loyalist_titan",
+                        "count": [1, 1],
+                        "options": {
+                            "level": 0,
+                            "is_temporary_ruler_ship": false,
+                            "items": [
+                                "trader_mobile_ruler_ship",
+                                "trader_mobile_fleet_beacon"
+                            ]
+                        }
+                    },
+                    {
+                        "unit": "trader_scout_corvette",
+                        "count": [2, 2]
+                    },
+                    {
+                        "unit": "trader_colony_frigate",
+                        "count": [1, 1]
+                    }]
+                }]
+            }]
+        },
+        {
+            "faction_allowed": "trader_rebel",
+            "remove_starting_units": true,
+            "faction_spawn_units": [
+            {
+                "player_index": 3,
+                "gravity_well_id": 5,
+                "spawn_units": {},
+                "spawn_units_in_hyperspace": [{
+                    "required_units": [
+                    {
+                        "unit": "trader_rebel_titan",
+                        "count": [1, 1],
+                        "options": {
+                            "level": 0,
+                            "is_temporary_ruler_ship": false,
+                            "items": [
+                                "trader_mobile_ruler_ship",
+                                "trader_mobile_fleet_beacon"
+                            ]
+                        }
+                    },
+                    {
+                        "unit": "trader_scout_corvette",
+                        "count": [2, 2]
+                    },
+                    {
+                        "unit": "trader_colony_frigate",
+                        "count": [1, 1]
+                    }]
+                }]
+            }]
+        },
+        {
+            "faction_allowed": "vasari_loyalist",
+            "remove_starting_units": true,
+            "faction_spawn_units": [
+            {
+                "player_index": 3,
+                "gravity_well_id": 5,
+                "spawn_units": {},
+                "spawn_units_in_hyperspace": [{
+                    "required_units": [
+                    {
+                        "unit": "vasari_loyalist_titan",
+                        "count": [1, 1],
+                        "options": {
+                            "level": 0,
+                            "is_temporary_ruler_ship": false,
+                            "items": [
+                                "vasari_mobile_ruler_ship",
+                                "vasari_mobile_fleet_beacon"
+                            ]
+                        }
+                    },
+                    {
+                        "unit": "vasari_scout_corvette",
+                        "count": [2, 2]
+                    },
+                    {
+                        "unit": "vasari_colony_cruiser",
+                        "count": [1, 1]
+                    }]
+                }]
+            }]
+        },
+        {
+            "faction_allowed": "vasari_rebel",
+            "remove_starting_units": true,
+            "faction_spawn_units": [
+            {
+                "player_index": 3,
+                "gravity_well_id": 5,
+                "spawn_units": {},
+                "spawn_units_in_hyperspace": [{
+                    "required_units": [
+                    {
+                        "unit": "vasari_rebel_titan",
+                        "count": [1, 1],
+                        "options": {
+                            "level": 0,
+                            "is_temporary_ruler_ship": false,
+                            "items": [
+                                "vasari_mobile_ruler_ship",
+                                "vasari_mobile_fleet_beacon"
+                            ]
+                        }
+                    },
+                    {
+                        "unit": "vasari_scout_corvette",
+                        "count": [2, 2]
+                    },
+                    {
+                        "unit": "vasari_colony_cruiser",
+                        "count": [1, 1]
+                    }]
+                }]
+            }]
+        },
+        {
+            "faction_allowed": "advent_loyalist",
+            "remove_starting_units": true,
+            "faction_spawn_units": [
+            {
+                "player_index": 3,
+                "gravity_well_id": 5,
+                "spawn_units": {},
+                "spawn_units_in_hyperspace": [{
+                    "required_units": [
+                    {
+                        "unit": "advent_loyalist_titan",
+                        "count": [1, 1],
+                        "options": {
+                            "level": 0,
+                            "is_temporary_ruler_ship": false,
+                            "items": [
+                                "advent_mobile_ruler_ship",
+                                "advent_mobile_fleet_beacon"
+                            ]
+                        }
+                    },
+                    {
+                        "unit": "advent_scout_corvette",
+                        "count": [2, 2]
+                    },
+                    {
+                        "unit": "advent_colony_frigate",
+                        "count": [1, 1]
+                    }]
+                }]
+            }]
+        },
+        {
+            "faction_allowed": "advent_rebel",
+            "remove_starting_units": true,
+            "faction_spawn_units": [
+            {
+                "player_index": 3,
+                "gravity_well_id": 5,
+                "spawn_units": {},
+                "spawn_units_in_hyperspace": [{
+                    "required_units": [
+                    {
+                        "unit": "advent_rebel_titan",
+                        "count": [1, 1],
+                        "options": {
+                            "level": 0,
+                            "is_temporary_ruler_ship": false,
+                            "items": [
+                                "advent_mobile_ruler_ship",
+                                "advent_mobile_fleet_beacon"
+                            ]
+                        }
+                    },
+                    {
+                        "unit": "advent_scout_corvette",
+                        "count": [2, 2]
+                    },
+                    {
+                        "unit": "advent_colony_frigate",
+                        "count": [1, 1]
+                    }]
+                }]
+            }]
+        },
+        {
+            "faction_allowed": "trader_loyalist",
+            "remove_starting_units": true,
+            "faction_spawn_units": [
+            {
+                "player_index": 4,
+                "gravity_well_id": 6,
+                "spawn_units": {},
+                "spawn_units_in_hyperspace": [{
+                    "required_units": [
+                    {
+                        "unit": "trader_loyalist_titan",
+                        "count": [1, 1],
+                        "options": {
+                            "level": 0,
+                            "is_temporary_ruler_ship": false,
+                            "items": [
+                                "trader_mobile_ruler_ship",
+                                "trader_mobile_fleet_beacon"
+                            ]
+                        }
+                    },
+                    {
+                        "unit": "trader_scout_corvette",
+                        "count": [2, 2]
+                    },
+                    {
+                        "unit": "trader_colony_frigate",
+                        "count": [1, 1]
+                    }]
+                }]
+            }]
+        },
+        {
+            "faction_allowed": "trader_rebel",
+            "remove_starting_units": true,
+            "faction_spawn_units": [
+            {
+                "player_index": 4,
+                "gravity_well_id": 6,
+                "spawn_units": {},
+                "spawn_units_in_hyperspace": [{
+                    "required_units": [
+                    {
+                        "unit": "trader_rebel_titan",
+                        "count": [1, 1],
+                        "options": {
+                            "level": 0,
+                            "is_temporary_ruler_ship": false,
+                            "items": [
+                                "trader_mobile_ruler_ship",
+                                "trader_mobile_fleet_beacon"
+                            ]
+                        }
+                    },
+                    {
+                        "unit": "trader_scout_corvette",
+                        "count": [2, 2]
+                    },
+                    {
+                        "unit": "trader_colony_frigate",
+                        "count": [1, 1]
+                    }]
+                }]
+            }]
+        },
+        {
+            "faction_allowed": "vasari_loyalist",
+            "remove_starting_units": true,
+            "faction_spawn_units": [
+            {
+                "player_index": 4,
+                "gravity_well_id": 6,
+                "spawn_units": {},
+                "spawn_units_in_hyperspace": [{
+                    "required_units": [
+                    {
+                        "unit": "vasari_loyalist_titan",
+                        "count": [1, 1],
+                        "options": {
+                            "level": 0,
+                            "is_temporary_ruler_ship": false,
+                            "items": [
+                                "vasari_mobile_ruler_ship",
+                                "vasari_mobile_fleet_beacon"
+                            ]
+                        }
+                    },
+                    {
+                        "unit": "vasari_scout_corvette",
+                        "count": [2, 2]
+                    },
+                    {
+                        "unit": "vasari_colony_cruiser",
+                        "count": [1, 1]
+                    }]
+                }]
+            }]
+        },
+        {
+            "faction_allowed": "vasari_rebel",
+            "remove_starting_units": true,
+            "faction_spawn_units": [
+            {
+                "player_index": 4,
+                "gravity_well_id": 6,
+                "spawn_units": {},
+                "spawn_units_in_hyperspace": [{
+                    "required_units": [
+                    {
+                        "unit": "vasari_rebel_titan",
+                        "count": [1, 1],
+                        "options": {
+                            "level": 0,
+                            "is_temporary_ruler_ship": false,
+                            "items": [
+                                "vasari_mobile_ruler_ship",
+                                "vasari_mobile_fleet_beacon"
+                            ]
+                        }
+                    },
+                    {
+                        "unit": "vasari_scout_corvette",
+                        "count": [2, 2]
+                    },
+                    {
+                        "unit": "vasari_colony_cruiser",
+                        "count": [1, 1]
+                    }]
+                }]
+            }]
+        },
+        {
+            "faction_allowed": "advent_loyalist",
+            "remove_starting_units": true,
+            "faction_spawn_units": [
+            {
+                "player_index": 4,
+                "gravity_well_id": 6,
+                "spawn_units": {},
+                "spawn_units_in_hyperspace": [{
+                    "required_units": [
+                    {
+                        "unit": "advent_loyalist_titan",
+                        "count": [1, 1],
+                        "options": {
+                            "level": 0,
+                            "is_temporary_ruler_ship": false,
+                            "items": [
+                                "advent_mobile_ruler_ship",
+                                "advent_mobile_fleet_beacon"
+                            ]
+                        }
+                    },
+                    {
+                        "unit": "advent_scout_corvette",
+                        "count": [2, 2]
+                    },
+                    {
+                        "unit": "advent_colony_frigate",
+                        "count": [1, 1]
+                    }]
+                }]
+            }]
+        },
+        {
+            "faction_allowed": "advent_rebel",
+            "remove_starting_units": true,
+            "faction_spawn_units": [
+            {
+                "player_index": 4,
+                "gravity_well_id": 6,
+                "spawn_units": {},
+                "spawn_units_in_hyperspace": [{
+                    "required_units": [
+                    {
+                        "unit": "advent_rebel_titan",
+                        "count": [1, 1],
+                        "options": {
+                            "level": 0,
+                            "is_temporary_ruler_ship": false,
+                            "items": [
+                                "advent_mobile_ruler_ship",
+                                "advent_mobile_fleet_beacon"
+                            ]
+                        }
+                    },
+                    {
+                        "unit": "advent_scout_corvette",
+                        "count": [2, 2]
+                    },
+                    {
+                        "unit": "advent_colony_frigate",
+                        "count": [1, 1]
+                    }]
+                }]
+            }]
+        },
+        {
+            "faction_allowed": "trader_loyalist",
+            "remove_starting_units": true,
+            "faction_spawn_units": [
+            {
+                "player_index": 5,
+                "gravity_well_id": 7,
+                "spawn_units": {},
+                "spawn_units_in_hyperspace": [{
+                    "required_units": [
+                    {
+                        "unit": "trader_loyalist_titan",
+                        "count": [1, 1],
+                        "options": {
+                            "level": 0,
+                            "is_temporary_ruler_ship": false,
+                            "items": [
+                                "trader_mobile_ruler_ship",
+                                "trader_mobile_fleet_beacon"
+                            ]
+                        }
+                    },
+                    {
+                        "unit": "trader_scout_corvette",
+                        "count": [2, 2]
+                    },
+                    {
+                        "unit": "trader_colony_frigate",
+                        "count": [1, 1]
+                    }]
+                }]
+            }]
+        },
+        {
+            "faction_allowed": "trader_rebel",
+            "remove_starting_units": true,
+            "faction_spawn_units": [
+            {
+                "player_index": 5,
+                "gravity_well_id": 7,
+                "spawn_units": {},
+                "spawn_units_in_hyperspace": [{
+                    "required_units": [
+                    {
+                        "unit": "trader_rebel_titan",
+                        "count": [1, 1],
+                        "options": {
+                            "level": 0,
+                            "is_temporary_ruler_ship": false,
+                            "items": [
+                                "trader_mobile_ruler_ship",
+                                "trader_mobile_fleet_beacon"
+                            ]
+                        }
+                    },
+                    {
+                        "unit": "trader_scout_corvette",
+                        "count": [2, 2]
+                    },
+                    {
+                        "unit": "trader_colony_frigate",
+                        "count": [1, 1]
+                    }]
+                }]
+            }]
+        },
+        {
+            "faction_allowed": "vasari_loyalist",
+            "remove_starting_units": true,
+            "faction_spawn_units": [
+            {
+                "player_index": 5,
+                "gravity_well_id": 7,
+                "spawn_units": {},
+                "spawn_units_in_hyperspace": [{
+                    "required_units": [
+                    {
+                        "unit": "vasari_loyalist_titan",
+                        "count": [1, 1],
+                        "options": {
+                            "level": 0,
+                            "is_temporary_ruler_ship": false,
+                            "items": [
+                                "vasari_mobile_ruler_ship",
+                                "vasari_mobile_fleet_beacon"
+                            ]
+                        }
+                    },
+                    {
+                        "unit": "vasari_scout_corvette",
+                        "count": [2, 2]
+                    },
+                    {
+                        "unit": "vasari_colony_cruiser",
+                        "count": [1, 1]
+                    }]
+                }]
+            }]
+        },
+        {
+            "faction_allowed": "vasari_rebel",
+            "remove_starting_units": true,
+            "faction_spawn_units": [
+            {
+                "player_index": 5,
+                "gravity_well_id": 7,
+                "spawn_units": {},
+                "spawn_units_in_hyperspace": [{
+                    "required_units": [
+                    {
+                        "unit": "vasari_rebel_titan",
+                        "count": [1, 1],
+                        "options": {
+                            "level": 0,
+                            "is_temporary_ruler_ship": false,
+                            "items": [
+                                "vasari_mobile_ruler_ship",
+                                "vasari_mobile_fleet_beacon"
+                            ]
+                        }
+                    },
+                    {
+                        "unit": "vasari_scout_corvette",
+                        "count": [2, 2]
+                    },
+                    {
+                        "unit": "vasari_colony_cruiser",
+                        "count": [1, 1]
+                    }]
+                }]
+            }]
+        },
+        {
+            "faction_allowed": "advent_loyalist",
+            "remove_starting_units": true,
+            "faction_spawn_units": [
+            {
+                "player_index": 5,
+                "gravity_well_id": 7,
+                "spawn_units": {},
+                "spawn_units_in_hyperspace": [{
+                    "required_units": [
+                    {
+                        "unit": "advent_loyalist_titan",
+                        "count": [1, 1],
+                        "options": {
+                            "level": 0,
+                            "is_temporary_ruler_ship": false,
+                            "items": [
+                                "advent_mobile_ruler_ship",
+                                "advent_mobile_fleet_beacon"
+                            ]
+                        }
+                    },
+                    {
+                        "unit": "advent_scout_corvette",
+                        "count": [2, 2]
+                    },
+                    {
+                        "unit": "advent_colony_frigate",
+                        "count": [1, 1]
+                    }]
+                }]
+            }]
+        },
+        {
+            "faction_allowed": "advent_rebel",
+            "remove_starting_units": true,
+            "faction_spawn_units": [
+            {
+                "player_index": 5,
+                "gravity_well_id": 7,
+                "spawn_units": {},
+                "spawn_units_in_hyperspace": [{
+                    "required_units": [
+                    {
+                        "unit": "advent_rebel_titan",
+                        "count": [1, 1],
+                        "options": {
+                            "level": 0,
+                            "is_temporary_ruler_ship": false,
+                            "items": [
+                                "advent_mobile_ruler_ship",
+                                "advent_mobile_fleet_beacon"
+                            ]
+                        }
+                    },
+                    {
+                        "unit": "advent_scout_corvette",
+                        "count": [2, 2]
+                    },
+                    {
+                        "unit": "advent_colony_frigate",
+                        "count": [1, 1]
+                    }]
+                }]
+            }]
+        }
+    ],
+    "victory_type_gui":
+    {
+        "won_pictures": [
+            "clash_of_the_titans_victory_picture"
+        ],
+        "lost_pictures": [
+            "clash_of_the_titans_defeat_picture"
+        ],
+        "won_texts": [
+        {
+            "status": "player_victory.status.unique_scenario.clash_of_the_titans.won",
+            "phrase": "player_victory.phrase.unique_scenario.clash_of_the_titans.won"
+        }],
+        "lost_texts": [
+        {
+            "status": "player_victory.status.unique_scenario.clash_of_the_titans.lost",
+            "phrase": "player_victory.phrase.unique_scenario.clash_of_the_titans.lost"
+        }]
+    }
+}
