@@ -53,29 +53,37 @@
     {
       "player_index": 6,
       "faction_allowed": "vasari_loyalist",
-      "starting_track_levels": {
-        "logistics": 5, "defense": 5, "commerce": 5, "mining": 5, "research": 5
-      },
+      "starting_track_levels": {        "logistics": 5, "defense": 5, "commerce": 5, "mining": 5, "research": 5      },
       "starting_is_colonized": true,
       "starting_militia_supply": 0
     },
     {
       "player_index": 7,
       "faction_allowed": "trader_rebel",
-      "starting_track_levels": {
-        "logistics": 5, "defense": 5, "commerce": 5, "mining": 5, "research": 5
-      },
+      "starting_track_levels": {        "logistics": 5, "defense": 5, "commerce": 5, "mining": 5, "research": 5      },
       "starting_is_colonized": true,
       "starting_militia_supply": 0
     },
     {
       "player_index": 8,
       "faction_allowed": "advent_loyalist",
-      "starting_track_levels": {
-        "logistics": 5, "defense": 5, "commerce": 5, "mining": 5, "research": 5
-      },
+      "starting_track_levels": {"logistics": 5, "defense": 5, "commerce": 5, "mining": 5, "research": 5},
       "starting_is_colonized": true,
       "starting_militia_supply": 0
+    }
+  ],
+  "planets": [
+    {
+      "gravity_well_id": 18,
+      "starting_track_levels": {"logistics": 5, "defense": 5, "commerce": 5, "mining": 5, "research": 5}
+    },
+    {
+      "gravity_well_id": 19,
+      "starting_track_levels": {"logistics": 5, "defense": 5, "commerce": 5, "mining": 5, "research": 5}
+    },
+    {
+      "gravity_well_id": 20,
+      "starting_track_levels": {"logistics": 5, "defense": 5, "commerce": 5, "mining": 5, "research": 5}
     }
   ],
   "starting_research": [
@@ -120,18 +128,18 @@
     }
   ],
   "starting_units_to_any_player_and_gravity_well": [],
-  "initial_timer_before_waves": 30,
+  "initial_timer_before_waves": 600,
   "waves": {
-    "wave_interval": 210,
+    "wave_interval": 300,
     "force_unlock_enemy_research_tier_interval": 5,
     "unit_waves": [
       {
         "minimum_wave_count": 0,
-        "maximum_wave_count": 50,
+        "maximum_wave_count": 1,
         "wave_spawn_units": [
           {
             "player_index": 10,
-            "gravity_well_id": 11,
+            "gravity_well_id": 8,
             "minor_target_vector_ordered": [25, 2],
             "spawn_units": {
               "required_units": [
