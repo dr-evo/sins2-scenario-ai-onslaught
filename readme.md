@@ -1,4 +1,4 @@
-Custom scenario where multiple players fight powerful AI.
+Custom scenario allowing more than 5 players to play cooperatively against AI.
 
 Modifies simulation - all players in multiplayer must have this mod.
 
