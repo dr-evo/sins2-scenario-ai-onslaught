@@ -28,7 +28,7 @@ Built for patch 1.45 (Eivonn's fine) , 2025-10-06+
 - 2v4 scenario
 
 # References
-- modio
+- https://mod.io/g/sins2/m/ai-onslaught
 - https://github.com/dr-evo/sins2-scenario-ai-onslaught
 - discord
 
