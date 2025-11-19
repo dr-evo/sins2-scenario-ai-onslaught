@@ -30,7 +30,7 @@ Built for patch 1.45 (Eivonn's fine) , 2025-10-06+
 # References
 - https://mod.io/g/sins2/m/ai-onslaught
 - https://github.com/dr-evo/sins2-scenario-ai-onslaught
-- discord
+- https://discord.com/channels/266693357093257216/1440850252742787244/1440850252742787244
 
 # Contact
 - discord: drevo#6922
