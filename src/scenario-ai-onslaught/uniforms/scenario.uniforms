@@ -1,6 +1,6 @@
 {
     "scenarios": [
-		"ai-onslaught"
+		"3-ai-onslaught"
     ],
     "fake_server_scenarios": [],
     "dlc_scenarios": [],

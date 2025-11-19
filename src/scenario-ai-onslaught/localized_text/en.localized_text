@@ -1,6 +1,8 @@
 {
-	"scenario.ai-onslaught.name": "AI Onslaught",
-	"scenario.ai-onslaught.desc": "TODO",
-	"scenario.ai-onslaught.objective_description": "Eliminate your rivals.",
-	"scenario.ai-onslaught.start_window_description": "Scenario:\\n-wormhole and star travel disabled"
+	"scenario.3-ai-onslaught.name": "3 AI Onslaught",
+	"scenario.3-ai-onslaught.desc": "Collaborate with your allies to defeat the AI",
+	"scenario.ai-onslaught.objective_description": "Eliminate the AI.",
+	"scenario.ai-onslaught.start_window_description": "Scenario:\\n-collaborate with your allies to defeat the AI",
+    "ai_difficulty.name.onslaught": "Onslaught",
+    "ai_difficulty.description.onslaught": "Bad times."
 }

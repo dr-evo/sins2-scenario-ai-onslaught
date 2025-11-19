@@ -1,0 +1,182 @@
+{
+  "start_window_movie": "scenario_superpowers",
+  "start_window_movie_brush": "map_art_superpowers",
+  "start_window_description": "scenario.ai-onslaught.start_window_description",
+  "objective_description": "scenario.ai-onslaught.objective_description",
+  "victory_type_gui": {
+    "won_pictures": ["superpowers_victory_picture"],
+    "lost_pictures": ["superpowers_defeat_picture"],
+    "won_texts": [
+      {
+        "status": "player_victory.status.unique_scenario.superpowers.won",
+        "phrase": "player_victory.phrase.unique_scenario.superpowers.won"
+      }
+    ],
+    "lost_texts": [
+      {
+        "status": "player_victory.status.unique_scenario.superpowers.lost",
+        "phrase": "player_victory.phrase.unique_scenario.superpowers.lost"
+      }
+    ]
+  },
+  "victory_overrides": [
+    "home_planet"
+  ],
+  "disable_research": [],
+  "allowed_factions": [
+    {"player_index": 6, "allowed_factions": ["vasari_loyalist"]},
+    {"player_index": 7, "allowed_factions": ["trader_rebel"]},
+    {"player_index": 8, "allowed_factions": ["advent_loyalist"]}
+  ],
+  "required_players": [
+    {"player_index": 6, "human": false, "ai": true},
+    {"player_index": 7, "human": false, "ai": true},
+    {"player_index": 8, "human": false, "ai": true}
+  ],
+  "ai_params": [
+    {"player_index": 1, "max_difficulty": "nightmare"},
+    {"player_index": 2, "max_difficulty": "nightmare"},
+    {"player_index": 3, "max_difficulty": "nightmare"},
+    {"player_index": 4, "max_difficulty": "nightmare"},
+    {"player_index": 5, "max_difficulty": "nightmare"},
+    {"player_index": 6, "max_difficulty": "nightmare"},
+    {"player_index": 6, "min_difficulty": "impossible", "ai_behavior": "aggressive"},
+    {"player_index": 7, "min_difficulty": "impossible", "ai_behavior": "aggressive"},
+    {"player_index": 8, "min_difficulty": "impossible", "ai_behavior": "aggressive"}
+  ],
+  "starting_research": [
+    {
+      "faction_allowed": "vasari_loyalist",
+      "player_definitions": [
+        {
+          "player_index": 6,
+          "domains_definitions": [
+            {"domain": "civilian", "unlocked_tier": 2, "unlock_all_research_through_tier": 2},
+            {"domain": "military", "unlocked_tier": 2, "unlock_all_research_through_tier": 2}
+          ],
+          "other_unlocked_research": []
+        }
+      ]
+    },
+    {
+      "faction_allowed": "trader_rebel",
+      "player_definitions": [
+        {
+          "player_index": 7,
+          "domains_definitions": [
+            {"domain": "civilian", "unlocked_tier": 2, "unlock_all_research_through_tier": 2},
+            {"domain": "military", "unlocked_tier": 2, "unlock_all_research_through_tier": 2}
+          ],
+          "other_unlocked_research": []
+        }
+      ]
+    },
+    {
+      "faction_allowed": "advent_loyalist",
+      "player_definitions": [
+        {
+          "player_index": 8,
+          "domains_definitions": [
+            {"domain": "civilian", "unlocked_tier": 2, "unlock_all_research_through_tier": 2},
+            {"domain": "military", "unlocked_tier": 2, "unlock_all_research_through_tier": 2}
+          ],
+          "other_unlocked_research": []
+        }
+      ]
+    }
+  ],
+  "starting_units_to_any_player_and_gravity_well": [
+    {
+      "faction_allowed": "vasari_loyalist",
+      "faction_spawn_units": [
+        {
+          "player_index": 6,
+          "gravity_well_id": 8,
+          "spawn_units": {
+            "required_units": [
+              {"unit": "vasari_civilian_research_lab_structure", "count": [10, 10]},
+              {"unit": "vasari_military_research_lab_structure", "count": [10, 10]},
+              {"unit": "vasari_culture_center_structure", "count": [2, 2]},
+              {"unit": "vasari_exotic_factory_structure", "count": [4, 4]},
+              {"unit": "vasari_factory_structure", "count": [4, 4]},
+              {"unit": "vasari_fleet_beacon_structure", "count": [2, 2]},
+              {"unit": "vasari_phase_gate_structure", "count": [1, 1]},
+              {"unit": "vasari_phase_jump_inhibitor_structure", "count": [1, 1]},
+              {"unit": "vasari_phase_synchronizer_structure", "count": [1, 1]},
+              {
+                "unit": "vasari_starbase", "count": [1, 1],
+                "options": {
+                  "items": [
+                    "vasari_starbase_planetary_shield_array"
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "faction_allowed": "trader_rebel",
+      "faction_spawn_units": [
+        {
+          "player_index": 7,
+          "gravity_well_id": 9,
+          "spawn_units": {
+            "required_units": [
+              {"unit": "trader_civilian_research_lab_structure", "count": [10, 10]},
+              {"unit": "trader_military_research_lab_structure", "count": [10, 10]},
+              {"unit": "trader_culture_center_structure", "count": [2, 2]},
+              {"unit": "trader_exotic_factory_structure", "count": [4, 4]},
+              {"unit": "trader_frigate_factory_structure", "count": [4, 4]},
+              {"unit": "trader_capital_ship_factory_structure", "count": [4, 4]},
+              {"unit": "trader_rebel_titan_factory_structure", "count": [1, 1]},
+              {"unit": "vasari_phase_gate_structure", "count": [1, 1]},
+              {"unit": "trader_phase_jump_inhibitor_structure", "count": [1, 1]},
+              {"unit": "trader_trade_port_structure", "count": [4, 4]},
+              {
+                "unit": "trader_starbase", "count": [1, 1],
+                "options": {
+                  "items": [
+                    "trader_starbase_planetary_shield_array"
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "faction_allowed": "advent_loyalist",
+      "faction_spawn_units": [
+        {
+          "player_index": 8,
+          "gravity_well_id": 10,
+          "spawn_units": {
+            "required_units": [
+              {"unit": "advent_civilian_research_lab_structure", "count": [10, 10]},
+              {"unit": "advent_military_research_lab_structure", "count": [10, 10]},
+              {"unit": "advent_culture_center_structure", "count": [2, 2]},
+              {"unit": "advent_exotic_factory_structure", "count": [4, 4]},
+              {"unit": "advent_ship_factory_structure", "count": [4, 4]},
+              {"unit": "advent_capital_ship_factory_structure", "count": [4, 4]},
+              {"unit": "advent_loyalist_titan_factory_structure", "count": [1, 1]},
+              {"unit": "vasari_phase_gate_structure", "count": [1, 1]},
+              {"unit": "advent_phase_jump_inhibitor_structure", "count": [1, 1]},
+              {"unit": "advent_unity_structure", "count": [5, 5]},
+              {
+                "unit": "advent_starbase", "count": [1, 1],
+                "options": {
+                  "items": [
+                    "advent_starbase_planetary_shield_array"
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
