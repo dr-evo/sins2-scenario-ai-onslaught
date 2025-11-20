@@ -1,6 +1,6 @@
 conquer 3 empires with ever escalating attacks
 
-players get reinforcements after X minutes
+players get reinforcements after X minutes?
 
 
 
